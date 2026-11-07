@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794090407689,
+  "updatedAt": 1794091415042,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -83,7 +83,7 @@
               "title": "念",
               "level": 2,
               "spoiler": 0,
-              "body": "说好听点叫念力，说不好听点就是**注意力**。行者靠念捕捉震动、气味、温度、呼吸声等一切信息。",
+              "body": "意识体的意识，通过感知散发到物体表面上，可以被观察，也可以发侦查加密。\n\n俗称人类的第六感，以大脑为感知器官，感知信息中的[[信息]]也是一种感知",
               "title_en": "Nen",
               "body_en": "Put nicely, it is psychic power; put bluntly, it is **attention**. Walkers use Nen to pick up vibrations, smells, temperature, breathing — every scrap of information."
             },
@@ -327,6 +327,42 @@
               "level": 2,
               "spoiler": 0,
               "body": "【是人的神，是神的人；在凡人之上，在神明之下；以人之念，使神之权。】",
+              "body_en": ""
+            }
+          ]
+        },
+        {
+          "id": "p9pue10",
+          "title": "世界三构成",
+          "title_en": "",
+          "summary": "",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "snsiupa",
+              "title": "信息",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sn7n1u8",
+              "title": "物质",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sgxzpjz",
+              "title": "能量",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
               "body_en": ""
             }
           ]
