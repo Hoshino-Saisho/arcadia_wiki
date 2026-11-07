@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794087475030,
+  "updatedAt": 1794090407689,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -141,25 +141,192 @@
           "id": "phbvr19",
           "title": "至高伦",
           "title_en": "Supreme Hierarchy",
+          "summary": "至高由共鸣主在救世主晚期所观察的数据中第一出来的，比概念更接近法则本体的法则的化身\n祂们不吞噬任何意识，也没有任何的意识。祂们不回应也无法回应任何存在，因为祂们只是法则本身。",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "s96jdrt",
+              "title": "世界",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "顾名思义，即世界本身。祂被称为原初的那一位，【神】，但祂本身并不会为任何存在带来任何的馈赠或保佑。\n\n祂以死去身体化作世界，而增熵就是祂尸体的腐烂。身为一切存在的第一因，没有存在祂创造世界，也就是自杀的理由是什么，但也没有必要了。\n\n身为原初的那一位，[[原初]]自然是祂的直系概念。",
+              "body_en": ""
+            },
+            {
+              "id": "ss6mihf",
+              "title": "绝对",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "在【绝】的法则下，没有存在可以逃离。祂亦是不朽的神柱，也是不破的枷锁。虽然真正的绝对不可能被创造和修改以及打破，但伪造出来的绝对，[[律令]]，既可以做到。\n\n绝对之下，皆为公平，因此概念公平是绝对的直系概念。",
+              "body_en": ""
+            },
+            {
+              "id": "sh769a6",
+              "title": "极致",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "极致是一切的上下限，祂就像是在极限中让事物反弹的那堵墙，也是万物的【极】。\n\n每次计算祂的存在，总会和【绝对】搞混，但每次验证的时候，都能发现祂和绝对的区别。如果绝对是一成不变的法则，那么极致就是登峰造极的神迹。绝对是定理，而极致是定理的上下限值。\n\n正因祂们两者的互相证明和否定，证明了至高们本质是一个东西，不过根据不同特性而被分开来了而已。",
+              "body_en": ""
+            },
+            {
+              "id": "skwhxyw",
+              "title": "运算",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "运算其实并不是直觉上的运算，而是法则互相重叠而发出一系列反应的过程。没人知道祂的重点是不是[[完美]]，但共鸣主希望【运】是。\n\n也许祂是世界自灭的课题，也许是世界的过程，也许是法则运行的轨迹。早在世界死亡的那一刻，运算便早就将结局钉死。\n\n运算的定义出自特莉丝，她认为，[[命运]]本质是在编制未来，而[[时间]]才是命运的推进者。因此，命运和时间是运算的直系概念。",
+              "body_en": ""
+            },
+            {
+              "id": "s0csp8d",
+              "title": "完美",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "共鸣主认为一切运算的终点，一切极致的融合体，绝对的圆：完美。他通过将世界所存在的概念通过来源来做一个‘科技树’，却发现人类所留下的痕迹歪歪扭扭，有的十分深入，有的仅浅尝一番。\n\n他认为，只要到世界的终局，这一切都会弥补，并形成一个完美的圆。",
+              "body_en": ""
+            },
+            {
+              "id": "sc671w9",
+              "title": "∅",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "没错，就是∅，但其实祂的名字应该是【】。对，什么都没有，不过可以以【无】这个名字来称呼祂。祂的定义很简单，不存在，或者说存在的独立。\n假设法则是一条条复杂的刻痕，那么无就是刻痕之间的空白。那里什么都没有，也没有什么意义。\n\n共鸣主不确定祂是否存在，因为祂自身的定义就是不存在，但万一呢？",
+              "body_en": ""
+            }
+          ],
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
+        },
+        {
+          "id": "pwa1eoj",
+          "title": "六面体",
+          "title_en": "",
           "summary": "",
           "spoiler": 0,
           "sections": [
             {
-              "id": "sblragg",
-              "title": "至高伦",
-              "title_en": "Supreme Hierarchy",
-              "level": 2,
-              "spoiler": 0,
-              "body": "至高由共鸣主在救世主晚期所观察的数据中第一出来的，比概念更接近法则本体的法则的化身\n祂们不吞噬任何意识，也没有任何的意识。祂们不回应也无法回应任何存在，因为祂们只是法则本身。",
-              "body_en": ""
-            },
-            {
-              "id": "s96jdrt",
-              "title": "[[世界]]",
+              "id": "s8e8y96",
+              "title": "永恒",
               "title_en": "",
               "level": 2,
               "spoiler": 0,
-              "body": "顾名思义，即世界本身。祂被称为原初的那一位，【神】，但祂本身并不会为任何存在带来任何的馈赠或保佑。\n\n祂以身体化作世界，而增熵就是祂尸体的腐烂。身为一切存在的第一因，没有存在祂创造世界的理由是什么，但也没有必要了。",
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sy0nlop",
+              "title": "虚无",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sgkma38",
+              "title": "混乱",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sl7mqmr",
+              "title": "深渊",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "s3901cz",
+              "title": "未知",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sfv3zdv",
+              "title": "已知",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            }
+          ]
+        },
+        {
+          "id": "plikq4y",
+          "title": "理智四方",
+          "title_en": "",
+          "summary": "",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "s5folpc",
+              "title": "观察",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "s9q83o2",
+              "title": "记录",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sc26uoz",
+              "title": "推演",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sge3q14",
+              "title": "定义",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            }
+          ]
+        },
+        {
+          "id": "pykxig7",
+          "title": "人神",
+          "title_en": "",
+          "summary": "",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "sqqocg4",
+              "title": "定义",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "【是人的神，是神的人；在凡人之上，在神明之下；以人之念，使神之权。】",
               "body_en": ""
             }
           ]
@@ -260,6 +427,27 @@
             }
           ],
           "title_en": "Special",
+          "intro_en": ""
+        },
+        {
+          "id": "giu5hkk",
+          "title": "序列",
+          "title_en": "Sequence",
+          "intro": "",
+          "fields": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence"
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name"
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence"
+            }
+          ],
           "intro_en": ""
         }
       ],
@@ -893,6 +1081,443 @@
             }
           ],
           "sections": []
+        },
+        {
+          "id": "cjnztxw",
+          "group": "giu5hkk",
+          "title": "公平",
+          "title_en": "Fairness",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "1",
+              "v_en": "1",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "原",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属序列",
+              "k_en": "Current Sequence",
+              "v": "公平",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cidrc7m",
+          "group": "giu5hkk",
+          "title": "自由",
+          "title_en": "Freedom",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "2",
+              "v_en": "2",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "风",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "自由",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cosw9mv",
+          "group": "giu5hkk",
+          "title": "守护",
+          "title_en": "Guardianship",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "3",
+              "v_en": "3",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "守护",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "colak5t",
+          "group": "giu5hkk",
+          "title": "无私",
+          "title_en": "Selflessness",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "4",
+              "v_en": "4",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "星野缘初",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "无私",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": [
+            {
+              "id": "s0wz6ph",
+              "title": "冷知识",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "该角色并不是作者自设，而是作者使用了他的名字来做网名。",
+              "body_en": ""
+            }
+          ]
+        },
+        {
+          "id": "ck65a0e",
+          "group": "giu5hkk",
+          "title": "反抗",
+          "title_en": "Defiance",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "6",
+              "v_en": "6",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "反抗",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "ccu05uf",
+          "group": "giu5hkk",
+          "title": "谨慎",
+          "title_en": "Prudence",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "7",
+              "v_en": "7",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "时羽",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属序列",
+              "k_en": "Current Sequence",
+              "v": "时间",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cp4f9l5",
+          "group": "giu5hkk",
+          "title": "指引",
+          "title_en": "Guidance",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "8",
+              "v_en": "8",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "因果",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "指引",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cw7gfkb",
+          "group": "giu5hkk",
+          "title": "讽刺",
+          "title_en": "Irony",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "9",
+              "v_en": "9",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "恶运",
+              "v_en": "",
+              "spoiler": 5
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "c09byja",
+          "group": "giu5hkk",
+          "title": "分析",
+          "title_en": "Analysis",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "10",
+              "v_en": "10",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "哥尼缇欧",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "分析",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cuy8r7t",
+          "group": "giu5hkk",
+          "title": "求知",
+          "title_en": "Inquiry",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "11",
+              "v_en": "11",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "维利塔斯？",
+              "v_en": "Veritas?",
+              "spoiler": 3
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "真相",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cdpvcr8",
+          "group": "giu5hkk",
+          "title": "惩戒",
+          "title_en": "Chastisement",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "12",
+              "v_en": "12",
+              "spoiler": 0
+            },
+            {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "希罗",
+              "v_en": "",
+              "spoiler": 2
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "审判",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cduyrce",
+          "group": "giu5hkk",
+          "title": "安娜",
+          "title_en": "Ana",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "无编号",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "代号",
+              "k_en": "Real name",
+              "v": "【记录者】",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "记录",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "理智四方之一：记录",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
         }
       ],
       "title_en": "Characters",
@@ -914,6 +1539,11 @@
           "id": "book1",
           "title": "第一部正篇",
           "title_en": "Book One"
+        },
+        {
+          "id": "t9ydqm5",
+          "title": "第二部正篇",
+          "title_en": ""
         }
       ],
       "eras": [
@@ -1032,19 +1662,24 @@
         },
         {
           "id": "resonator-death",
-          "title": "共鸣主之死",
+          "title": "共鸣主的第一次死亡",
           "spoiler": 2,
           "date": {
             "label": "第二篇",
+            "label_en": "Part Two",
             "sort": 2,
-            "timeline": "book1",
-            "label_en": "Part Two"
+            "timeline": "book1"
           },
-          "summary": "共鸣印记闪烁，世界收到“共鸣主已陨落”的消息。",
+          "summary": "共鸣印记消失，世界收到“共鸣主已陨落”的消息。",
           "infobox": [],
           "sections": [],
-          "title_en": "Death of the Resonator",
-          "summary_en": "Resonance Marks flicker, and the world receives the news: the Resonator has fallen."
+          "title_en": "First death of the Resonator",
+          "summary_en": "Resonance Marks flicker, and the world receives the news: the Resonator has fallen.",
+          "subtitle": "",
+          "subtitle_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
         },
         {
           "id": "eclh8n4",
