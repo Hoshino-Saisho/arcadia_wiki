@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "updatedAt": 1794074912746,
+  "updatedAt": 1794085374850,
   "site": {
-    "title": "ARCADIA 百科",
+    "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
-    "intro": "欢迎来到《理想乡》（ARCADIA）的世界观百科。\n在顶部选择你的**阅读进度**，超出进度的剧透会被遮住，点一下才会显示。",
+    "intro": "欢迎来到《理想乡》的世界观百科。\n在顶部选择你的**阅读进度**，超出进度的剧透会被遮住。",
     "defaultProgress": 0,
     "progress": [
       {
@@ -24,13 +24,17 @@
         "label_en": "Finished Part Three"
       },
       {
-        "label": "读完第四篇（全部）",
+        "label": "读完第四篇",
         "label_en": "Finished Part Four (everything)"
+      },
+      {
+        "label": "读完第五篇",
+        "label_en": "Finished Part Five (everything)"
       }
     ],
     "title_en": "ARCADIA Wiki",
     "subtitle_en": "A world guide to ARCADIA",
-    "intro_en": "Welcome to the world wiki of *ARCADIA* (《理想乡》).\nPick your **reading progress** at the top — spoilers beyond it are hidden until you click them."
+    "intro_en": "Welcome to the world wiki of *ARCADIA*.\nPick your **reading progress** at the top — spoilers beyond it are hidden until you click them."
   },
   "modules": [
     {
@@ -199,6 +203,10 @@
             {
               "k": "首次登场",
               "k_en": "First appearance"
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm"
             }
           ],
           "title_en": "Humans",
@@ -430,6 +438,13 @@
               "v": "三阶",
               "v_en": "Tier Three",
               "spoiler": 1
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm",
+              "v": "剑冢焚天",
+              "v_en": "Sword Tomb Burning Sky",
+              "spoiler": 5
             }
           ],
           "sections": [],
@@ -590,8 +605,8 @@
             {
               "k": "年龄",
               "k_en": "Age",
-              "v": "17",
-              "v_en": "17",
+              "v": "17（心理年龄）",
+              "v_en": "17 (mental age)",
               "spoiler": 0
             },
             {
@@ -605,13 +620,13 @@
               "k": "行者类型",
               "k_en": "Walker type",
               "v": "启蒙行者",
-              "v_en": "",
+              "v_en": "Enlightenment Walker",
               "spoiler": 4
             },
             {
               "k": "所属",
               "k_en": "Affiliation",
-              "v": "",
+              "v": "无",
               "v_en": "",
               "spoiler": 0
             },
@@ -621,9 +636,33 @@
               "v": "第一章",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "克隆人",
+              "v_en": "Clone",
+              "spoiler": 0
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm",
+              "v": "启蒙矩阵",
+              "v_en": "Matrix of Enlightenment",
+              "spoiler": 0
             }
           ],
-          "sections": [],
+          "sections": [
+            {
+              "id": "sebqahz",
+              "title": "特莉丝 晨星",
+              "title_en": "Teris Morningstar",
+              "level": 2,
+              "spoiler": 0,
+              "body": "共鸣主之女||，也是造物主和救世主的女儿。身为他们三人的女儿，||她是由特殊技巧||，让三人神的灵魂和理念取其精华，去其糟粕||所造，虽然被称为克隆人，但其实并没有使用克隆的技术，而是通过[[逆行]]技术||，通过三人神在世界所留下的侵蚀提取出的理念，||凝聚出的特殊肉体。\n\n她完美的继承了||造物主的调皮和天真，救世主的中二与好色，以及||共鸣主对世界的爱。虽然共鸣主总跟她说不必着急，但在世界的表现||与【恶运】的影响下||，她下定了决心，去拯救这个世界。",
+              "body_en": ""
+            }
+          ],
           "summary_en": "",
           "aliases": [],
           "aliases_en": []
