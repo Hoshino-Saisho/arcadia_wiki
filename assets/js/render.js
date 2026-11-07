@@ -4,7 +4,7 @@ import { esc } from './util.js';
 import { renderText, plainText } from './markdown.js';
 import { ui, tx, lacksEn, txList, lang } from './i18n.js';
 import {
-  state, findModule, findItem, itemsOf, routeOf, isHidden, resolveLink, search,
+  state, findModule, findItem, itemsOf, routeOf, isHidden, resolveLink, search, effSpoiler,
 } from './store.js';
 
 const md = (t) => renderText(t, { resolveLink });
@@ -43,6 +43,12 @@ function guard(key, spoiler, html) {
     <small>${esc(ui('spoilerHint'))}</small></div>`;
 }
 
+// 模块 / 子界面 / 时间线 / 纪元 是否对读者可见
+const shown = (spoiler, ...keys) => !isHidden(spoiler) || keys.some(k => state.revealed.has(k));
+const shownModule = (m) => shown(m.spoiler, `mod:${m.id}`);
+const shownGroup = (m, g) => shown(g.spoiler, `grp:${g.id}`, `grps:${m.id}`);
+const shownTimeline = (m, t) => shown(t.spoiler, `tl:${t.id}`, `tls:${m.id}`);
+
 function breadcrumbs(parts) {
   return `<nav class="crumbs">${parts.map(([href, t]) =>
     href ? `<a href="${href}">${esc(t)}</a>` : `<span>${esc(t)}</span>`).join('<span class="sep">›</span>')}</nav>`;
@@ -50,24 +56,26 @@ function breadcrumbs(parts) {
 
 function avatar(item) {
   if (item.image) return `<img src="${esc(item.image)}" alt="" loading="lazy">`;
-  const ch = (tx(item, 'title') || '?').trim().charAt(0);
+  let name = (tx(item, 'title') || '?').trim();
+  if (lang === 'en') name = name.replace(/^(the|a|an)\s+/i, ''); // The Creator → C
+  const ch = name.charAt(0).toUpperCase();
   return `<span class="avatar-letter">${esc(ch)}</span>`;
 }
 
 // ---------- 侧边导航 ----------
 export function renderNav(route) {
   const d = state.data;
-  const items = d.modules.map(m => {
+  const items = d.modules.filter(shownModule).map(m => {
     const active = route.m === m.id;
     let sub = '';
     if (active) {
       if (m.type === 'catalog') {
-        sub = m.groups.map(g => `<a class="nav-sub ${route.g === g.id ? 'on' : ''}" href="#/m/${m.id}/g/${g.id}">${T(g, 'title')}</a>`).join('');
+        sub = m.groups.filter(g => shownGroup(m, g)).map(g => `<a class="nav-sub ${route.g === g.id ? 'on' : ''}" href="#/m/${m.id}/g/${g.id}">${T(g, 'title')}</a>`).join('');
       } else if (m.type === 'wiki') {
         sub = m.pages.filter(p => !isHidden(p.spoiler)).map(p =>
           `<a class="nav-sub ${route.p === p.id ? 'on' : ''}" href="${routeOf(m, p)}">${T(p, 'title')}</a>`).join('');
       } else if (m.type === 'timeline' && m.timelines.length > 1) {
-        sub = m.timelines.map(t => `<a class="nav-sub ${route.t === t.id ? 'on' : ''}" href="#/m/${m.id}/t/${t.id}">${T(t, 'title')}</a>`).join('');
+        sub = m.timelines.filter(t => shownTimeline(m, t)).map(t => `<a class="nav-sub ${route.t === t.id ? 'on' : ''}" href="#/m/${m.id}/t/${t.id}">${T(t, 'title')}</a>`).join('');
       }
     }
     return `<div class="nav-group ${active ? 'open' : ''}">
@@ -82,14 +90,14 @@ export function renderNav(route) {
 function viewHome() {
   const d = state.data;
   const cards = d.modules.map(m => {
-    const n = itemsOf(m).filter(p => !isHidden(p.spoiler)).length;
-    return `<div class="mod-card">
+    const n = itemsOf(m).filter(p => !isHidden(effSpoiler(m, p))).length;
+    return guard(`mod:${m.id}`, m.spoiler, `<div class="mod-card">
       <a href="#/m/${m.id}" class="mod-link">
         <div class="mod-ico">${esc(m.icon || '•')}</div>
-        <div><h3>${T(m, 'title')}${enTag(m, 'title')}</h3><p>${esc(plainText(tx(m, 'intro')).slice(0, 70))}</p>
+        <div><h3>${T(m, 'title')}${enTag(m, 'title')}${spoilerTag(m.spoiler)}</h3><p>${esc(plainText(tx(m, 'intro')).slice(0, 70))}</p>
         <small>${esc(ui('type_' + m.type))} · ${esc(ui('entries', n))}</small></div></a>
       <div class="ebar">${btn('edit-module', '编辑', { m: m.id })}${btn('move-module', '↑', { m: m.id, d: -1 })}${btn('move-module', '↓', { m: m.id, d: 1 })}${btn('del-module', '删除', { m: m.id }, 'danger')}</div>
-    </div>`;
+    </div>`);
   }).join('');
   return `<section class="home">
     <header class="hero"><h1>${T(d.site, 'title')}</h1><p>${T(d.site, 'subtitle')}</p>
@@ -103,7 +111,7 @@ function viewHome() {
 // ---------- 模块首页 ----------
 function moduleHeader(m, extra = '') {
   return `${breadcrumbs([['#/', ui('home')], [null, tx(m, 'title')]])}
-    <h1 class="title">${esc(m.icon || '')} ${T(m, 'title')}${enTag(m, 'title')}</h1>
+    <h1 class="title">${esc(m.icon || '')} ${T(m, 'title')}${enTag(m, 'title')}${spoilerTag(m.spoiler)}</h1>
     <div class="ebar">${btn('edit-module', '编辑模块', { m: m.id })}${extra}</div>
     ${tx(m, 'intro') ? `<div class="prose lead">${md(tx(m, 'intro'))}</div>` : ''}`;
 }
@@ -117,11 +125,16 @@ function viewWikiIndex(m) {
 }
 
 function viewCatalog(m, gid) {
-  const g = m.groups.find(x => x.id === gid) || m.groups[0];
-  const tabs = m.groups.map(x => `<a class="tab ${g && x.id === g.id ? 'on' : ''}" href="#/m/${m.id}/g/${x.id}">${T(x, 'title')}
-      <small>${m.entries.filter(e => e.group === x.id && !isHidden(e.spoiler)).length}</small></a>`).join('');
+  const visible = m.groups.filter(x => shownGroup(m, x));
+  const hiddenN = m.groups.length - visible.length;
+  const g = m.groups.find(x => x.id === gid) || visible[0];
+  const tabs = visible.map(x => `<a class="tab ${g && x.id === g.id ? 'on' : ''}" href="#/m/${m.id}/g/${x.id}">${T(x, 'title')}
+      <small>${m.entries.filter(e => e.group === x.id && !isHidden(e.spoiler)).length}</small>${spoilerTag(x.spoiler)}</a>`).join('')
+    + (hiddenN ? `<span class="tab tab-hidden" data-reveal="grps:${m.id}" title="${esc(ui('spoilerHint'))}">⚠ +${hiddenN}</span>` : '');
   let body = `<p class="empty">${esc(ui('noGroups'))}</p>`;
-  if (g) {
+  if (g && !shownGroup(m, g)) {
+    body = guard(`grp:${g.id}`, g.spoiler, '');
+  } else if (g) {
     const cards = m.entries.filter(e => e.group === g.id).map(e => guard(`${e.id}:`, e.spoiler, `
       <a class="card" href="${routeOf(m, e)}">
         <div class="card-img">${avatar(e)}</div>
@@ -142,9 +155,12 @@ function eraOf(m, sort) {
 }
 
 function viewTimeline(m, tid) {
-  const t = m.timelines.find(x => x.id === tid) || m.timelines[0];
-  const tabs = m.timelines.length > 1 || state.editMode
-    ? `<div class="tabs">${m.timelines.map(x => `<a class="tab ${t && x.id === t.id ? 'on' : ''}" href="#/m/${m.id}/t/${x.id}">${T(x, 'title')}</a>`).join('')}${btn('add-timeline', '＋ 时间线', { m: m.id })}</div>` : '';
+  const visible = m.timelines.filter(x => shownTimeline(m, x));
+  const hiddenN = m.timelines.length - visible.length;
+  const t = m.timelines.find(x => x.id === tid) || visible[0];
+  const tabs = visible.length > 1 || hiddenN || state.editMode
+    ? `<div class="tabs">${visible.map(x => `<a class="tab ${t && x.id === t.id ? 'on' : ''}" href="#/m/${m.id}/t/${x.id}">${T(x, 'title')}${spoilerTag(x.spoiler)}</a>`).join('')}${hiddenN ? `<span class="tab tab-hidden" data-reveal="tls:${m.id}" title="${esc(ui('spoilerHint'))}">⚠ +${hiddenN}</span>` : ''}${btn('add-timeline', '＋ 时间线', { m: m.id })}</div>` : '';
+  if (t && !shownTimeline(m, t)) return `${moduleHeader(m)}${tabs}${guard(`tl:${t.id}`, t.spoiler, '')}`;
   const events = m.entries
     .filter(e => (e.date?.timeline || m.timelines[0]?.id) === t?.id)
     .sort((a, b) => Number(a.date?.sort || 0) - Number(b.date?.sort || 0));
@@ -152,7 +168,10 @@ function viewTimeline(m, tid) {
   for (const e of events) {
     const era = eraOf(m, Number(e.date?.sort || 0));
     if (era !== lastEra) {
-      html += `<div class="tl-era" style="--era:${esc(era?.color || '#888')}">${esc(era ? tx(era, 'title') : ui('noEra'))}</div>`;
+      const eraName = !era ? esc(ui('noEra'))
+        : shown(era.spoiler, `era:${era.id}`) ? esc(tx(era, 'title')) + spoilerTag(era.spoiler)
+        : `<span data-reveal="era:${esc(era.id)}" title="${esc(ui('spoilerHint'))}">⚠ ？？？</span>`;
+      html += `<div class="tl-era" ${era ? `id="era-${esc(era.id)}"` : ''} style="--era:${esc(era?.color || '#888')}">${eraName}</div>`;
       lastEra = era;
     }
     html += guard(`${e.id}:`, e.spoiler, `
@@ -185,8 +204,9 @@ function viewItem(m, item) {
   }
   crumbs.push([null, tx(item, 'title')]);
 
-  if (isHidden(item.spoiler) && !state.revealed.has(`${item.id}:`)) {
-    return { html: `${breadcrumbs(crumbs)}<h1 class="title">${T(item, 'title')}</h1>${guard(`${item.id}:`, item.spoiler, '')}`, toc: '' };
+  const es = effSpoiler(m, item);
+  if (isHidden(es) && !state.revealed.has(`${item.id}:`)) {
+    return { html: `${breadcrumbs(crumbs.slice(0, 2))}${guard(`${item.id}:`, es, '')}`, toc: '' };
   }
 
   const nums = numberSections(item.sections);
@@ -269,6 +289,9 @@ export function renderMain(route) {
   if (route.view === 'home') return { html: viewHome(), toc: '' };
   const m = findModule(route.m);
   if (!m) return { html: `<h1 class="title">${esc(ui('moduleMissing'))}</h1><p><a href="#/">${esc(ui('backHome'))}</a></p>`, toc: '' };
+  if (route.view !== 'item' && !shownModule(m)) {
+    return { html: `${breadcrumbs([['#/', ui('home')]])}${guard(`mod:${m.id}`, m.spoiler, '')}`, toc: '' };
+  }
   if (route.view === 'item') {
     const item = findItem(m, route.p);
     if (!item) return { html: `<h1 class="title">${esc(ui('itemMissing'))}</h1><p><a href="#/m/${m.id}">${esc(ui('back'))} ${T(m, 'title')}</a></p>`, toc: '' };
