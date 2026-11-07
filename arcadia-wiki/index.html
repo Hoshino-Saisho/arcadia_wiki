@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARCADIA 百科</title>
+  <meta name="description" content="《理想乡》ARCADIA 世界观百科：世界观常识、人物、事件时间线">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,8 94,88 6,88' fill='%23D9443B'/><circle cx='50' cy='62' r='22' fill='%231b1b1b'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menu-btn" class="icon-btn" aria-label="菜单">☰</button>
+    <a href="#/" class="brand" id="site-title">ARCADIA 百科</a>
+    <div class="top-tools">
+      <input id="search" type="search" placeholder="搜索人物、概念、事件…" autocomplete="off">
+      <label class="progress-sel" title="选择你读到哪里，超出的内容会被遮住">
+        <span>阅读进度</span><select id="progress"></select>
+      </label>
+      <button id="edit-toggle" class="btn ghost">✎ 编辑</button>
+    </div>
+  </header>
+
+  <div id="draft-banner" class="banner" hidden>
+    你正在看本机保存的<b>未发布草稿</b>，其他读者看不到这些修改。
+    <button class="btn" data-act="toggle-edit">进入编辑并发布</button>
+    <button class="btn" data-act="discard">放弃草稿</button>
+  </div>
+
+  <div class="layout">
+    <nav id="nav" class="nav"></nav>
+    <main id="main" class="main"><p class="loading">载入中…</p></main>
+    <aside id="toc" class="toc"></aside>
+  </div>
+
+  <div id="toolbar"></div>
+
+  <noscript>这个网站需要开启 JavaScript。</noscript>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
