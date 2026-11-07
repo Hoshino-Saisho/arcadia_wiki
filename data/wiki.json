@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1,
+  "updatedAt": 1794074912746,
   "site": {
     "title": "ARCADIA 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -52,7 +52,7 @@
               "title": "概念",
               "level": 2,
               "spoiler": 0,
-              "body": "概念是世界扭曲的本质。你可以把它们当做小时候看的童话书中的小精灵：有的比较友善，有的对人类抱有很大的敌意。\n\n> 概念有，也必须有两面性，这是不变的法则。\n\n例如【极端冷静】和【极端愤怒】都属于[[极端]]。",
+              "body": "概念的存在依靠意识体的定义。\n该存在是概念性的，例如人群的混乱和电子云的混乱皆为[[混乱]]。它们的力量来源于||造物主的意识，晶石||，通过[[晶石]]||对造物主的领域进行修改和扭曲||来获得力量\n\n在[[前文明]]中，概念没有直接干预世界的能力，但它们的对意识体的侵蚀和腐蚀能力大大提高。||造物主为了研究概念并尝试解决它们的侵蚀，创造出领域【梦中净土】和心之境【众愿净土】用来研究它们的特性。||\n\n在造物纪开始后，概念获得了干预世界的力量。它们的力量会根据意识体的认知和造物主的认知发生扭曲和变形，以不同形态的方式干预：火焰，闪电，岩石，风，影子，光，植物，等等等等...\n因此，同一个概念可能在不同的人手中以不同形态的方式爆发力量。\n\n概念会随着意识体的定义逐渐扭曲分裂，而过于小的概念无法吞噬[[晶石]]，导致无法成为有一定意识的概念。\n概念的意识来自于||造物主的意识||，部分概念会在拥有意识后变强，也有部分需要维持一定程度的有意识和无意识，以至于部分保持无意识才能使用全部权能（三种例子分别是：混乱，审判和命运）。\n\n",
               "title_en": "Concepts",
               "body_en": "Concepts are the warped essence of the world. Think of them as the little sprites from childhood fairy tales: some are friendly, some deeply hostile to humans.\n\n> A concept has — and must have — two sides. That is an unchanging law.\n\nFor example, 【Extreme Calm】 and 【Extreme Rage】 both belong to [[Extremity]]."
             },
@@ -132,6 +132,33 @@
           ],
           "title_en": "The Three Eras",
           "summary_en": "According to the Chronicles — *The Era of Creation: Complete*, *The Era of Salvation: Complete* and *The Era of Resonance●Genesis* — history is divided into three eras. See the [timeline](#/m/events)."
+        },
+        {
+          "id": "phbvr19",
+          "title": "至高伦",
+          "title_en": "Supreme Hierarchy",
+          "summary": "",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "sblragg",
+              "title": "至高伦",
+              "title_en": "Supreme Hierarchy",
+              "level": 2,
+              "spoiler": 0,
+              "body": "至高由共鸣主在救世主晚期所观察的数据中第一出来的，比概念更接近法则本体的法则的化身\n祂们不吞噬任何意识，也没有任何的意识。祂们不回应也无法回应任何存在，因为祂们只是法则本身。",
+              "body_en": ""
+            },
+            {
+              "id": "s96jdrt",
+              "title": "[[世界]]",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "顾名思义，即世界本身。祂被称为原初的那一位，【神】，但祂本身并不会为任何存在带来任何的馈赠或保佑。\n\n祂以身体化作世界，而增熵就是祂尸体的腐烂。身为一切存在的第一因，没有存在祂创造世界的理由是什么，但也没有必要了。",
+              "body_en": ""
+            }
+          ]
         }
       ],
       "title_en": "World Basics",
@@ -209,27 +236,23 @@
         {
           "id": "special",
           "title": "特殊",
-          "intro": "主、至高等无法归类的存在。",
+          "intro": "模因生命，角色的另一面，守护神、至高等存在。",
           "fields": [
             {
               "k": "英文名",
               "k_en": "English name"
             },
             {
-              "k": "称号",
-              "k_en": "Title"
+              "k": "创造者",
+              "k_en": "Maker"
             },
             {
-              "k": "象征",
-              "k_en": "Symbol"
-            },
-            {
-              "k": "纪元",
-              "k_en": "Era"
+              "k": "本体",
+              "k_en": "Body"
             }
           ],
           "title_en": "Special",
-          "intro_en": "Lords, Supremes and other beings that fit nowhere else."
+          "intro_en": ""
         }
       ],
       "entries": [
@@ -247,45 +270,45 @@
           "infobox": [
             {
               "k": "英文名",
-              "v": "Starmorni",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "Starmorni"
+              "v": "Starmorni",
+              "v_en": "Starmorni",
+              "spoiler": 0
             },
             {
               "k": "年龄",
-              "v": "15 岁",
-              "spoiler": 0,
               "k_en": "Age",
-              "v_en": "15"
+              "v": "15 岁",
+              "v_en": "15",
+              "spoiler": 0
             },
             {
               "k": "阶级",
-              "v": "三阶",
-              "spoiler": 0,
               "k_en": "Tier",
-              "v_en": "Tier Three"
+              "v": "三阶",
+              "v_en": "Tier Three",
+              "spoiler": 0
             },
             {
               "k": "行者类型",
-              "v": "[[极端]]行者（天生行者）",
-              "spoiler": 0,
               "k_en": "Walker type",
-              "v_en": "[[Extremity]] Walker (born Walker)"
+              "v": "[[极端]]行者（天生行者）",
+              "v_en": "[[Extremity]] Walker (born Walker)",
+              "spoiler": 0
             },
             {
               "k": "所属",
-              "v": "官方正规军（一个圆加三条杠）",
-              "spoiler": 0,
               "k_en": "Affiliation",
-              "v_en": "Authority regular army (a circle and three bars)"
+              "v": "官方正规军",
+              "v_en": "Authority regular army",
+              "spoiler": 0
             },
             {
               "k": "首次登场",
-              "v": "第一篇 第一章",
-              "spoiler": 0,
               "k_en": "First appearance",
-              "v_en": "Part One, Chapter 1"
+              "v": "第一篇 第一章",
+              "v_en": "Part One, Chapter 1",
+              "spoiler": 0
             }
           ],
           "sections": [
@@ -303,7 +326,7 @@
               "title": "性格",
               "level": 2,
               "spoiler": 0,
-              "body": "表面平静，喜欢喝绿茶。嘴上爱斗嘴，对学姐的“顶级智斗”毫无察觉。",
+              "body": "表面平静，喜欢喝绿茶。对[[忻苑]]有难以衡量的偏爱。",
               "title_en": "Personality",
               "body_en": "Calm on the surface, fond of green tea. Loves to bicker, and is completely oblivious to Senpai’s “galaxy-brain schemes”."
             }
@@ -329,24 +352,24 @@
           "infobox": [
             {
               "k": "英文名",
-              "v": "Xin Yuan",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "Xin Yuan"
+              "v": "Xin Yuan",
+              "v_en": "Xin Yuan",
+              "spoiler": 0
             },
             {
               "k": "年龄",
-              "v": "高二",
-              "spoiler": 0,
               "k_en": "Age",
-              "v_en": "Second-year (high school)"
+              "v": "16",
+              "v_en": "16",
+              "spoiler": 0
             },
             {
               "k": "首次登场",
-              "v": "第一篇 第一章",
-              "spoiler": 0,
               "k_en": "First appearance",
-              "v_en": "Part One, Chapter 1"
+              "v": "第一篇 第一章",
+              "v_en": "Part One, Chapter 1",
+              "spoiler": 0
             }
           ],
           "sections": [],
@@ -368,24 +391,45 @@
           "infobox": [
             {
               "k": "英文名",
-              "v": "Hiro",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "Hiro"
+              "v": "Hiro",
+              "v_en": "Hiro",
+              "spoiler": 0
+            },
+            {
+              "k": "年龄",
+              "k_en": "age",
+              "v": "16",
+              "v_en": "16",
+              "spoiler": 0
             },
             {
               "k": "行者类型",
-              "v": "审判行者",
-              "spoiler": 0,
               "k_en": "Walker type",
-              "v_en": "Judgement Walker"
+              "v": "审判行者",
+              "v_en": "Judgement Walker",
+              "spoiler": 1
             },
             {
               "k": "序列",
-              "v": "序列十二【惩戒】",
-              "spoiler": 2,
               "k_en": "Sequence",
-              "v_en": "Sequence Twelve 【Chastisement】"
+              "v": "序列十二【惩戒】",
+              "v_en": "Sequence Twelve 【Chastisement】",
+              "spoiler": 2
+            },
+            {
+              "k": "阶级（第一章）",
+              "k_en": "Tier(Charapter 1)",
+              "v": "二阶",
+              "v_en": "Tier Two",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级（第二章）",
+              "k_en": "Tier(Charapter 2)",
+              "v": "三阶",
+              "v_en": "Tier Three",
+              "spoiler": 1
             }
           ],
           "sections": [],
@@ -457,17 +501,17 @@
           "infobox": [
             {
               "k": "英文名",
-              "v": "Chaos",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "Chaos"
+              "v": "Chaos",
+              "v_en": "Chaos",
+              "spoiler": 0
             },
             {
               "k": "类别",
-              "v": "六面体",
-              "spoiler": 1,
               "k_en": "Class",
-              "v_en": "The Hexahedra"
+              "v": "六面体",
+              "v_en": "The Hexahedra",
+              "spoiler": 0
             }
           ],
           "sections": [],
@@ -477,101 +521,332 @@
           "subtitle_en": ""
         },
         {
-          "id": "resonator",
-          "group": "special",
-          "title": "共鸣主",
+          "id": "c41ozz4",
+          "group": "concept",
+          "title": "虚无",
+          "title_en": "",
           "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
           "image": "",
           "spoiler": 0,
-          "summary": "共鸣纪的主，与概念立下契约，共鸣印记由此诞生。",
           "infobox": [
             {
               "k": "英文名",
-              "v": "The Resonator",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "The Resonator"
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
             },
             {
-              "k": "象征",
-              "v": "【全在】",
-              "spoiler": 0,
-              "k_en": "Symbol",
-              "v_en": "【Omnipresence】"
+              "k": "类别",
+              "k_en": "Class",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
             },
             {
-              "k": "纪元",
-              "v": "共鸣纪",
-              "spoiler": 0,
-              "k_en": "Era",
-              "v_en": "Era of Resonance"
+              "k": "行者",
+              "k_en": "Walker",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "c5x339v",
+          "group": "human",
+          "title": "特莉丝 晨星",
+          "title_en": "Teris Morningstar",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "Teris Morningstar",
+              "v_en": "Teris Morningstar",
+              "spoiler": 0
+            },
+            {
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "17",
+              "v_en": "17",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "四阶行者",
+              "v_en": "Tier Four",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "启蒙行者",
+              "v_en": "",
+              "spoiler": 4
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "第一章",
+              "v_en": "",
+              "spoiler": 0
             }
           ],
           "sections": [],
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
+        },
+        {
+          "id": "c3gj8n7",
+          "group": "human",
+          "title": "共鸣主",
           "title_en": "The Resonator",
-          "summary_en": "Lord of the Era of Resonance. His pact with the concepts gave birth to Resonance Marks.",
-          "aliases_en": [],
-          "subtitle_en": ""
+          "subtitle": "维利塔斯 亚特里克 德拉吗",
+          "subtitle_en": "Veritas Yatrike Drama",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "Veritas Yatrike Drama",
+              "v_en": "Veritas Yatrike Drama",
+              "spoiler": 0
+            },
+            {
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "～200",
+              "v_en": "～200",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "五阶",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "共鸣行者",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "官方",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "第一章",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "完美",
+              "v_en": "Perfection",
+              "spoiler": 3
+            }
+          ],
+          "sections": [],
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
         },
         {
-          "id": "creator",
-          "group": "special",
+          "id": "cx7060d",
+          "group": "human",
           "title": "造物主",
-          "subtitle": "",
+          "title_en": "The Creator",
+          "subtitle": "李天明",
+          "subtitle_en": "",
+          "summary": "",
           "image": "",
           "spoiler": 0,
-          "summary": "造物纪的开创者，象征【全知】。",
           "infobox": [
             {
-              "k": "象征",
-              "v": "【全知】",
-              "spoiler": 0,
-              "k_en": "Symbol",
-              "v_en": "【Omniscience】"
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
             },
             {
-              "k": "纪元",
-              "v": "造物纪",
-              "spoiler": 0,
-              "k_en": "Era",
-              "v_en": "Era of Creation"
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "未知",
+              "v_en": "Unkown",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "五阶～六阶",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "造物行者",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "无",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "【绝对】",
+              "v_en": "",
+              "spoiler": 3
             }
           ],
-          "sections": [],
-          "title_en": "The Creator",
-          "summary_en": "Founder of the Era of Creation, symbol of 【Omniscience】.",
-          "aliases_en": [],
-          "subtitle_en": ""
+          "sections": []
         },
         {
-          "id": "savior",
-          "group": "special",
+          "id": "c6z623h",
+          "group": "human",
           "title": "救世主",
-          "subtitle": "",
+          "title_en": "The Savior",
+          "subtitle": "岚",
+          "subtitle_en": "Gale",
+          "summary": "",
           "image": "",
           "spoiler": 0,
-          "summary": "救世纪的主，象征【全能】。",
           "infobox": [
             {
-              "k": "象征",
-              "v": "【全能】",
-              "spoiler": 0,
-              "k_en": "Symbol",
-              "v_en": "【Omnipotence】"
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "Gale",
+              "v_en": "Gale",
+              "spoiler": 0
             },
             {
-              "k": "纪元",
-              "v": "救世纪",
-              "spoiler": 0,
-              "k_en": "Era",
-              "v_en": "Era of Salvation"
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "未知",
+              "v_en": "Unkown",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "五阶～六阶",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "救世行者",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "官方",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "【极致】",
+              "v_en": "",
+              "spoiler": 3
             }
           ],
-          "sections": [],
-          "title_en": "The Savior",
-          "summary_en": "Lord of the Era of Salvation, symbol of 【Omnipotence】.",
-          "aliases_en": [],
-          "subtitle_en": ""
+          "sections": []
+        },
+        {
+          "id": "cg0cnmh",
+          "group": "special",
+          "title": "邪恶",
+          "title_en": "Evil",
+          "subtitle": "暗",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "创造者",
+              "k_en": "Maker",
+              "v": "[[造物主]]",
+              "v_en": "[[The Creator]]",
+              "spoiler": 3
+            }
+          ],
+          "sections": []
         }
       ],
       "title_en": "Characters",
@@ -705,6 +980,16 @@
       ],
       "title_en": "Events",
       "intro_en": "Major events in chronological order. Sort values count “years before the present”: 900 years ago is -900, the present is 0."
+    },
+    {
+      "id": "mo1lnq1",
+      "title": "前传：梦中净土",
+      "title_en": "",
+      "icon": "🐋",
+      "type": "wiki",
+      "intro": "理想乡前传：梦中净土",
+      "pages": [],
+      "intro_en": ""
     }
   ]
 }
