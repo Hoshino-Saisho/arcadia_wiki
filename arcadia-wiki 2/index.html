@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARCADIA Wiki</title>
+  <meta name="description" content="ARCADIA (理想乡) world wiki — concepts, characters and timeline. 《理想乡》世界观百科。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,8 94,88 6,88' fill='%23D9443B'/><circle cx='50' cy='62' r='22' fill='%231b1b1b'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-mode="read">
+  <header class="topbar">
+    <button id="menu-btn" class="icon-btn" aria-label="Menu">☰</button>
+    <a href="#/" class="brand"><span id="site-title">ARCADIA</span></a>
+    <div class="top-tools">
+      <input id="search" type="search" autocomplete="off">
+      <label class="progress-sel" id="progress-wrap">
+        <span id="progress-label"></span><select id="progress"></select>
+      </label>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="zh">中文</button><button data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav id="nav" class="nav"></nav>
+    <main id="main" class="main"><p class="loading">…</p></main>
+    <aside id="toc" class="toc"></aside>
+  </div>
+
+  <div id="toolbar"></div>
+  <noscript>This site needs JavaScript. 这个网站需要开启 JavaScript。</noscript>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
