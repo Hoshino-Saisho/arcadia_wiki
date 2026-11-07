@@ -11,6 +11,7 @@ const STR = {
   spoilerBlock: ['⚠ 这里含有「{0}」之后的剧透', '⚠ Spoilers beyond “{0}”'],
   spoilerHint: ['点击显示（或在顶部调整阅读进度）', 'Click to reveal (or change your reading progress above)'],
   spoiler: ['剧透', 'Spoiler'],
+  hiddenFields: ['⚠ 还有 {0} 项设定含剧透（点击显示）', '⚠ {0} more field(s) hidden for spoilers (click to reveal)'],
   toc: ['目录', 'Contents'],
   aka: ['又称：', 'Also known as: '],
   date: ['时间', 'Date'],
