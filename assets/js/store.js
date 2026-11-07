@@ -5,6 +5,9 @@ import { plainText } from './markdown.js';
 const DRAFT_KEY = 'arcadia-wiki-draft';
 const PROGRESS_KEY = 'arcadia-wiki-progress';
 const REVEAL_KEY = 'arcadia-wiki-reveal';
+try { localStorage.removeItem(REVEAL_KEY); } catch { /* 清掉旧版本永久保存的记录 */ }
+function sessionGet() { try { return JSON.parse(sessionStorage.getItem(REVEAL_KEY) || '[]'); } catch { return []; } }
+function sessionSet(v) { try { sessionStorage.setItem(REVEAL_KEY, JSON.stringify(v)); } catch { /* ignore */ } }
 
 export const state = {
   mode: 'read',        // 'read' 读者页 / 'edit' 编辑器页
@@ -13,7 +16,7 @@ export const state = {
   usingDraft: false,
   editMode: false,     // 编辑器页里：true=编辑，false=以读者视角预览
   progress: 0,
-  revealed: new Set(storageGet(REVEAL_KEY, [])),
+  revealed: new Set(sessionGet()),   // 读者手动点开的剧透：只在本次浏览有效
 };
 
 export const MODULE_TYPES = {
@@ -71,12 +74,15 @@ export function normalize(d) {
   for (const m of d.modules) {
     m.id ||= uid('m');
     m.intro ||= '';
+    m.spoiler ||= 0;
     if (m.type === 'wiki') m.pages ||= [];
-    if (m.type === 'catalog') { m.groups ||= []; m.entries ||= []; for (const g of m.groups) g.fields ||= []; }
+    if (m.type === 'catalog') { m.groups ||= []; m.entries ||= []; for (const g of m.groups) { g.fields ||= []; g.spoiler ||= 0; } }
     if (m.type === 'timeline') {
       m.timelines ||= [{ id: 'main', title: '主时间线', title_en: 'Main timeline' }];
       m.eras ||= [];
       m.entries ||= [];
+      for (const t of m.timelines) t.spoiler ||= 0;
+      for (const e of m.eras) { e.id ||= uid('e'); e.spoiler ||= 0; }
     }
     for (const p of itemsOf(m)) {
       p.id ||= uid('p');
@@ -128,13 +134,29 @@ export function markPublished() {
 export function setProgress(i) {
   state.progress = i;
   storageSet(PROGRESS_KEY, i);
+  resetReveals(); // 换了阅读进度，之前点开的剧透全部重新遮住
+}
+export function resetReveals() {
+  state.revealed.clear();
+  sessionSet([]);
 }
 export function isHidden(spoiler) {
   return !state.editMode && (spoiler || 0) > state.progress;
 }
 export function reveal(key) {
   state.revealed.add(key);
-  storageSet(REVEAL_KEY, [...state.revealed]);
+  sessionSet([...state.revealed]);
+}
+
+// 条目实际的剧透等级：取条目、所在子界面/时间线、所在模块中最高的那个
+export function effSpoiler(m, item) {
+  let s = Math.max(m.spoiler || 0, item.spoiler || 0);
+  if (m.type === 'catalog') s = Math.max(s, m.groups.find(g => g.id === item.group)?.spoiler || 0);
+  if (m.type === 'timeline') {
+    const tid = item.date?.timeline || m.timelines[0]?.id;
+    s = Math.max(s, m.timelines.find(t => t.id === tid)?.spoiler || 0);
+  }
+  return s;
 }
 
 // ---- 索引：站内链接（中英文标题都认）+ 搜索 ----
@@ -144,7 +166,22 @@ let searchIndex = [];
 export function rebuildIndex() {
   titleIndex = new Map();
   searchIndex = [];
+  const later = [];    // 第二优先：时间线、纪元、子界面、模块
+  const sections = []; // 最后：章节标题
+  const add = (names, href) => { for (const n of names) if (n && !titleIndex.has(n)) titleIndex.set(n, href); };
   for (const m of state.data.modules) {
+    const mh = `#/m/${encodeURIComponent(m.id)}`;
+    if (m.type === 'timeline') {
+      for (const t of m.timelines) later.push([[t.title, t.title_en], `${mh}/t/${t.id}`]);
+      for (const e of m.eras) {
+        const inEra = m.entries.find(x => Number(x.date?.sort || 0) >= (e.from ?? -Infinity) && Number(x.date?.sort || 0) < (e.to ?? Infinity));
+        const tid = inEra?.date?.timeline || m.timelines[0]?.id;
+        later.push([[e.title, e.title_en], `${mh}/t/${tid}/e/${e.id}`]);
+      }
+    }
+    if (m.type === 'catalog') for (const g of m.groups) later.push([[g.title, g.title_en], `${mh}/g/${g.id}`]);
+    later.push([[m.title, m.title_en], mh]);
+    for (const p of itemsOf(m)) for (const s of p.sections || []) sections.push([[s.title, s.title_en], `${routeOf(m, p)}/s/${s.id}`]);
     for (const p of itemsOf(m)) {
       const href = routeOf(m, p);
       const names = [p.title, p.title_en, p.subtitle, p.subtitle_en, ...(p.aliases || []), ...(p.aliases_en || [])].filter(Boolean);
@@ -156,9 +193,10 @@ export function rebuildIndex() {
         for (const s of p.sections || []) parts.push([s['title' + suf], s.spoiler], [s['body' + suf], s.spoiler]);
         for (const r of p.infobox || []) parts.push([r['k' + suf], r.spoiler], [r['v' + suf], r.spoiler]);
       }
-      searchIndex.push({ m, p, href, names: names.join(' '), parts: parts.filter(x => x[0]).map(([t, sp]) => [plainText(t), sp || 0]), spoiler: p.spoiler || 0 });
+      searchIndex.push({ m, p, href, names: names.join(' '), parts: parts.filter(x => x[0]).map(([t, sp]) => [plainText(t), sp || 0]), spoiler: effSpoiler(m, p) });
     }
   }
+  for (const [names, href] of [...later, ...sections]) add(names, href);
 }
 
 export function resolveLink(title) {
