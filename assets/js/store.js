@@ -149,13 +149,14 @@ export function rebuildIndex() {
       const href = routeOf(m, p);
       const names = [p.title, p.title_en, p.subtitle, p.subtitle_en, ...(p.aliases || []), ...(p.aliases_en || [])].filter(Boolean);
       for (const n of names) if (!titleIndex.has(n)) titleIndex.set(n, href);
+      // 每段文字都记下剧透等级，搜索时只用读者能看的部分
       const parts = [];
       for (const suf of ['', '_en']) {
-        parts.push(p['summary' + suf]);
-        for (const s of p.sections || []) parts.push(s['title' + suf], s['body' + suf]);
-        for (const r of p.infobox || []) parts.push(r['k' + suf], r['v' + suf]);
+        parts.push([p['summary' + suf], 0]);
+        for (const s of p.sections || []) parts.push([s['title' + suf], s.spoiler], [s['body' + suf], s.spoiler]);
+        for (const r of p.infobox || []) parts.push([r['k' + suf], r.spoiler], [r['v' + suf], r.spoiler]);
       }
-      searchIndex.push({ m, p, href, names: names.join(' '), text: parts.filter(Boolean).map(plainText).join(' '), spoiler: p.spoiler || 0 });
+      searchIndex.push({ m, p, href, names: names.join(' '), parts: parts.filter(x => x[0]).map(([t, sp]) => [plainText(t), sp || 0]), spoiler: p.spoiler || 0 });
     }
   }
 }
@@ -171,12 +172,13 @@ export function search(q) {
   for (const it of searchIndex) {
     if (isHidden(it.spoiler)) continue;
     const t = it.names.toLowerCase();
-    const body = it.text.toLowerCase();
+    const text = it.parts.filter(([, sp]) => !isHidden(sp)).map(([t]) => t).join(' ');
+    const body = text.toLowerCase();
     let score = 0;
     if (t.split(' ').includes(q)) score = 100; else if (t.includes(q)) score = 50; else if (body.includes(q)) score = 10;
     if (score) {
       const i = body.indexOf(q);
-      const snip = i >= 0 ? it.text.slice(Math.max(0, i - 30), i + 70) : it.text.slice(0, 90);
+      const snip = i >= 0 ? text.slice(Math.max(0, i - 30), i + 70) : text.slice(0, 90);
       res.push({ ...it, score, snip });
     }
   }
