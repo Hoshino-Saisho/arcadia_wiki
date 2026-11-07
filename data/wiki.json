@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794091898487,
+  "updatedAt": 1794092328632,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -56,7 +56,7 @@
               "title": "概念",
               "level": 2,
               "spoiler": 0,
-              "body": "概念的存在依靠意识体的定义。\n该存在是概念性的，例如人群的混乱和电子云的混乱皆为[[混乱]]。它们的力量来源于||造物主的意识，||[[晶石]]||，通过晶石对造物主的领域进行修改和扭曲来获得力量||。\n\n在[[前文明]]中，概念没有直接干预世界的能力，但它们的对意识体的侵蚀和腐蚀能力大大提高。||造物主为了研究概念并尝试解决它们的侵蚀，创造出领域【梦中净土】和心之境【众愿净土】用来研究它们的特性。||\n\n在造物纪开始后，概念获得了干预世界的力量。它们的力量会根据意识体的认知和造物主的认知发生扭曲和变形，以不同形态的方式干预：火焰，闪电，岩石，风，影子，光，植物，等等等等...\n因此，同一个概念可能在不同的人手中以不同形态的方式爆发力量。\n\n概念会随着意识体的定义逐渐扭曲分裂，而过于小的概念无法吞噬[[晶石]]，导致无法成为有一定意识的概念。\n概念的意识来自于||造物主的意识||，部分概念会在拥有意识后变强，也有部分需要维持一定程度的有意识和无意识，也有部分需要保持无意识才能使用全部权能（三种例子分别是：混乱，审判和命运）。\n\n",
+              "body": "概念的存在依靠意识体的定义。\n该存在是概念性的，例如人群的混乱和电子云的混乱皆为[[混乱]]。它们的力量来源于||造物主的意识，||[[晶石]]||，通过晶石对造物主的领域进行修改和扭曲来获得力量||。\n\n在[[世界历史|前文明]]中，概念没有直接干预世界的能力，但它们的对意识体的侵蚀和腐蚀能力大大提高。||造物主为了研究概念并尝试解决它们的侵蚀，创造出领域【梦中净土】和心之境【众愿净土】用来研究它们的特性。||\n\n在造物纪开始后，概念获得了干预世界的力量。它们的力量会根据意识体的认知和造物主的认知发生扭曲和变形，以不同形态的方式干预：火焰，闪电，岩石，风，影子，光，植物，等等等等...\n因此，同一个概念可能在不同的人手中以不同形态的方式爆发力量。\n\n概念会随着意识体的定义逐渐扭曲分裂，而过于小的概念无法吞噬[[晶石]]，导致无法成为有一定意识的概念。\n概念的意识来自于||造物主的意识||，部分概念会在拥有意识后变强，也有部分需要维持一定程度的有意识和无意识，也有部分需要保持无意识才能使用全部权能（三种例子分别是：混乱，审判和命运）。\n\n",
               "title_en": "Concepts",
               "body_en": "Concepts are the warped essence of the world. Think of them as the little sprites from childhood fairy tales: some are friendly, some deeply hostile to humans.\n\n> A concept has — and must have — two sides. That is an unchanging law.\n\nFor example, 【Extreme Calm】 and 【Extreme Rage】 both belong to [[Extremity]]."
             },
@@ -83,7 +83,7 @@
               "title": "念",
               "level": 2,
               "spoiler": 0,
-              "body": "意识体的意识，通过感知散发到物体表面上，可以被观察，也可以发侦查加密。\n\n俗称人类的第六感，以大脑为感知器官，感知信息中的[[信息]]也是一种感知",
+              "body": "意识体的意识，通过感知散发到物体表面上，可以被观察，也可以发侦查加密。\n\n俗称人类的第六感，以大脑为感知器官，感知信息中的[[世界三构成|信息]]也是一种感知",
               "title_en": "Nen",
               "body_en": "Put nicely, it is psychic power; put bluntly, it is **attention**. Walkers use Nen to pick up vibrations, smells, temperature, breathing — every scrap of information."
             },
@@ -764,7 +764,8 @@
           "title_en": "Chaos",
           "summary_en": "One of the Hexahedra, opposed to Eternity. Its word order is scrambled.",
           "aliases_en": [],
-          "subtitle_en": ""
+          "subtitle_en": "",
+          "aliases": []
         },
         {
           "id": "c41ozz4",
@@ -1522,7 +1523,7 @@
           "subtitle_en": "",
           "summary": "",
           "image": "",
-          "spoiler": 0,
+          "spoiler": 5,
           "infobox": [
             {
               "k": "序列编号",
@@ -1553,7 +1554,10 @@
               "spoiler": 0
             }
           ],
-          "sections": []
+          "sections": [],
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
         }
       ],
       "title_en": "Characters",
