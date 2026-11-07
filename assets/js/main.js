@@ -45,12 +45,20 @@ document.addEventListener('click', (e) => {
   if (lb) { setLang(lb.dataset.lang); render(); }
 });
 
+// 链接指向某个章节（/s/）或纪元（/e/）时，滚动到那里
+function scrollToTarget() {
+  const r = parseRoute();
+  const el = r.s ? document.getElementById('sec-' + r.s) : r.e ? document.getElementById('era-' + r.e) : null;
+  if (el) { el.scrollIntoView({ block: 'start' }); return true; }
+  return false;
+}
+
 let lastHash = '';
 window.addEventListener('hashchange', () => {
   const pageChanged = location.hash.split('?')[0] !== lastHash.split('?')[0];
   lastHash = location.hash;
   render();
-  if (pageChanged) window.scrollTo(0, 0);
+  if (!scrollToTarget() && pageChanged) window.scrollTo(0, 0);
 });
 
 async function bootEditor() {
@@ -92,6 +100,9 @@ async function boot() {
 
   lastHash = location.hash;
   render();
+  scrollToTarget();
+  window.__wikiBooted = true;
 }
 
+window.__wikiBooted = true; // 模块已加载
 boot();
