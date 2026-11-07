@@ -195,9 +195,14 @@ function viewItem(m, item) {
 
   let info = '';
   if (m.type !== 'wiki') {
-    const rows = (item.infobox || []).map((r, i) => isHidden(r.spoiler) && !state.revealed.has(`${item.id}:ib${i}`)
-      ? `<tr><th>${T(r, 'k')}</th><td><span class="spoiler-inline" data-reveal="${item.id}:ib${i}">${esc(ui('spoiler'))}</span></td></tr>`
-      : `<tr><th>${T(r, 'k')}</th><td>${renderText(tx(r, 'v'), { resolveLink }).replace(/^<p>|<\/p>$/g, '')}${enTag(r, 'v')}${spoilerTag(r.spoiler)}</td></tr>`).join('');
+    // 超出阅读进度的字段：连字段名一起隐藏，最后只显示一行“还有 N 项”
+    const ibKey = `${item.id}:ib`;
+    const showAll = state.revealed.has(ibKey);
+    const all = item.infobox || [];
+    const hiddenCount = showAll ? 0 : all.filter(r => isHidden(r.spoiler)).length;
+    const rows = all.filter(r => showAll || !isHidden(r.spoiler)).map(r =>
+      `<tr><th>${T(r, 'k')}</th><td>${renderText(tx(r, 'v'), { resolveLink }).replace(/^<p>|<\/p>$/g, '')}${enTag(r, 'v')}${spoilerTag(r.spoiler)}</td></tr>`).join('')
+      + (hiddenCount ? `<tr><td colspan="2" class="ib-hidden" data-reveal="${ibKey}">${esc(ui('hiddenFields', hiddenCount))}</td></tr>` : '');
     const dateRow = m.type === 'timeline'
       ? `<tr><th>${esc(ui('date'))}</th><td>${esc(tx(item.date, 'label'))}${state.editMode ? ` <small class="muted">(排序值 ${esc(item.date?.sort ?? 0)})</small>` : ''}</td></tr>` : '';
     info = `<aside class="infobox">
@@ -210,6 +215,10 @@ function viewItem(m, item) {
   }
 
   const sections = item.sections.map((s, i) => {
+    // 含剧透的章节：标题也一起隐藏
+    if (isHidden(s.spoiler) && !state.revealed.has(`${item.id}:${s.id}`)) {
+      return `<section class="sec" id="sec-${esc(s.id)}">${guard(`${item.id}:${s.id}`, s.spoiler, '')}</section>`;
+    }
     const tag = s.level === 3 ? 'h3' : 'h2';
     const ctrl = `<span class="ebar inline">${btn('edit-section', '编辑', { ...ids, s: s.id })}${btn('move-section', '↑', { ...ids, s: s.id, d: -1 })}${btn('move-section', '↓', { ...ids, s: s.id, d: 1 })}${btn('add-section', '＋下方插入', { ...ids, s: s.id })}${btn('del-section', '删除', { ...ids, s: s.id }, 'danger')}</span>`;
     return `<section class="sec" id="sec-${esc(s.id)}">
