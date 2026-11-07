@@ -3,7 +3,7 @@ import { $, $$, esc, uid, h, move, toast } from './util.js';
 import { renderText, FORMAT_HELP } from './markdown.js';
 import {
   state, MODULE_TYPES, findModule, findItem, itemsOf, routeOf,
-  touch, discardDraft, markPublished, normalize, resolveLink,
+  touch, discardDraft, markPublished, normalize, resolveLink, resetReveals,
 } from './store.js';
 import { getConfig, setConfig, logout, guessRepo, verify, publish } from './github.js';
 
@@ -28,7 +28,7 @@ export function showLogin(errorMsg = '') {
       <label class="f">访问令牌（Fine-grained token）<input name="token" type="password" value="${esc(c.token)}" required autocomplete="off"></label>
       <details class="f-help"><summary>高级：分支 / 数据文件路径</summary>
         <label class="f">分支<input name="branch" type="text" value="${esc(c.branch || 'main')}"></label>
-        <label class="f">数据文件路径<input name="path" type="text" value="${esc(c.path || 'data/wiki.json')}"></label>
+        <label class="f">数据文件路径<input name="path" type="text" value="${esc(c.path || g.path || 'data/wiki.json')}"></label>
       </details>
       <button class="btn primary" type="submit">登录</button>
       <p class="f-help">还没有令牌？看仓库里 README 的“第三步”。</p>
@@ -38,7 +38,7 @@ export function showLogin(errorMsg = '') {
     form.onsubmit = async (e) => {
       e.preventDefault();
       const fd = Object.fromEntries(new FormData(form));
-      const cfg = { owner: fd.owner.trim(), repo: fd.repo.trim(), token: fd.token.trim(), branch: (fd.branch || 'main').trim(), path: (fd.path || 'data/wiki.json').trim() };
+      const cfg = { owner: fd.owner.trim(), repo: fd.repo.trim(), token: fd.token.trim(), branch: (fd.branch || 'main').trim(), path: (fd.path || g.path || 'data/wiki.json').trim() };
       const b = $('button[type=submit]', form);
       b.disabled = true; b.textContent = '验证中…';
       try {
@@ -245,6 +245,7 @@ const actions = {
       title: '编辑模块', wide: true, fields: [
         bi('title', '名称', m),
         { key: 'icon', label: '图标', value: m.icon },
+        { key: 'spoiler', label: '整个模块的剧透等级（未到进度时，读者看不到这个模块）', type: 'select', numeric: true, value: m.spoiler || 0, options: spoilerOptions() },
         bi('intro', '模块介绍', m, { type: 'textarea', preview: true, size: 4 }),
         { key: 'id', label: '网址标识（英文/数字，改了会让旧链接失效）', value: m.id },
       ],
@@ -300,12 +301,13 @@ const actions = {
       title: '编辑子界面', wide: true, fields: [
         bi('title', '名称', g),
         bi('intro', '介绍', g, { type: 'textarea', preview: true, size: 3 }),
+        { key: 'spoiler', label: '剧透等级（未到进度时，读者看不到这个子界面和里面的条目）', type: 'select', numeric: true, value: g.spoiler || 0, options: spoilerOptions() },
         { key: 'fields', label: '设定栏模板（每行一个字段，写成“中文 | English”）', type: 'textarea', size: 6, value: templateText(g.fields),
           help: '只影响之后新建的条目。' },
       ],
     });
     if (!v) return;
-    Object.assign(g, { title: v.title, title_en: v.title_en, intro: v.intro, intro_en: v.intro_en, fields: parseTemplate(v.fields) });
+    Object.assign(g, { title: v.title, title_en: v.title_en, intro: v.intro, intro_en: v.intro_en, spoiler: v.spoiler, fields: parseTemplate(v.fields) });
     touch(); rerender();
   },
 
@@ -352,7 +354,8 @@ const actions = {
   async 'edit-timeline'(ds) {
     const m = findModule(ds.m);
     const t = m.timelines.find(x => x.id === ds.t);
-    const v = await openForm({ title: '编辑时间线', fields: [bi('title', '名称', t)] });
+    const v = await openForm({ title: '编辑时间线', fields: [bi('title', '名称', t),
+      { key: 'spoiler', label: '剧透等级（未到进度时，读者看不到这条时间线和里面的事件）', type: 'select', numeric: true, value: t.spoiler || 0, options: spoilerOptions() }] });
     if (!v) return;
     Object.assign(t, v); touch(); rerender();
   },
@@ -372,13 +375,14 @@ const actions = {
     const v = await openForm({
       title: '编辑纪元', wide: true, fields: [
         { key: 'eras', label: '纪元', type: 'rows', value: m.eras,
-          help: '事件按“排序值”落进纪元：起点 ≤ 排序值 < 终点，留空表示无限。建议用“距今多少年”：九百年前填 -900，现在填 0。',
-          newRow: () => ({ color: '#8a7f6a' }),
-          columns: [{ key: 'title', label: '名称', label_en: 'Name', bi: true, flex: 2 }, { key: 'from', label: '起点', type: 'number' }, { key: 'to', label: '终点', type: 'number' }, { key: 'color', label: '颜色', type: 'color' }] },
+          help: '事件按“排序值”落进纪元：起点 ≤ 排序值 < 终点，留空表示无限。建议用“距今多少年”：九百年前填 -900，现在填 0。纪元名称如果会剧透，右边选剧透等级，读者会看到“？？？”。',
+          newRow: () => ({ color: '#8a7f6a', spoiler: 0 }),
+          columns: [{ key: 'title', label: '名称', label_en: 'Name', bi: true, flex: 2 }, { key: 'from', label: '起点', type: 'number' }, { key: 'to', label: '终点', type: 'number' }, { key: 'color', label: '颜色', type: 'color' }, { key: 'spoiler', label: '剧透', type: 'select', numeric: true, options: spoilerOptions() }] },
       ],
     });
     if (!v) return;
-    m.eras = v.eras.map(e => ({ id: uid('e'), ...e, from: e.from === '' ? null : e.from, to: e.to === '' ? null : e.to }));
+    // 保留原来的纪元 ID（站内链接会用到）
+    m.eras = v.eras.map((e, i) => ({ id: m.eras[i]?.id || uid('e'), ...e, from: e.from === '' ? null : e.from, to: e.to === '' ? null : e.to }));
     touch(); rerender();
   },
 
@@ -577,6 +581,7 @@ const actions = {
 
   'toggle-preview'() {
     state.editMode = !state.editMode;
+    resetReveals(); // 预览时按读者的真实情况显示
     document.body.classList.toggle('editing', state.editMode);
     rerender();
   },
