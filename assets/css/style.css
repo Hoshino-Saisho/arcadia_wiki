@@ -265,3 +265,6 @@ body.editing .main { outline: 2px dashed color-mix(in srgb, var(--accent-2) 30%,
   #search { min-width: 90px; }
   .progress-sel select { max-width: 130px; }
 }
+
+/* 设定栏里被隐藏的剧透字段 */
+.infobox td.ib-hidden { text-align: center; color: var(--accent); cursor: pointer; font-size: 13px; background: color-mix(in srgb, var(--accent) 6%, transparent); }
