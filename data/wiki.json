@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794094202985,
+  "updatedAt": 1794153318505,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -62,21 +62,21 @@
             },
             {
               "id": "s2",
-              "title": "行者与共鸣印记",
+              "title": "印记",
               "level": 2,
               "spoiler": 0,
-              "body": "概念与行者之间是**交易关系**：概念给予力量和奖励，行者付出代价。\n\n每位行者身上都有一种印记，既代表他们是被概念选中的人，也代表有概念与他们做了交易。这种印记被称为**【共鸣印记】**。\n\n- 印记无法去除或隐藏，但可以被衣服遮住\n- 越强的行者，印记覆盖的范围越大\n- 印记的作用是让人承受力量，就像撑住高楼大厦的地基",
-              "title_en": "Walkers and Resonance Marks",
+              "body": "",
+              "title_en": "Marks",
               "body_en": "Concepts and Walkers have a **transactional relationship**: the concept grants power and rewards, and the Walker pays a price.\n\nEvery Walker bears a mark that shows they were chosen by a concept and that a deal was made. It is called a **【Resonance Mark】**.\n\n- A Mark cannot be removed or hidden, though clothing can cover it\n- The stronger the Walker, the larger the Mark\n- The Mark lets a body bear the power, like the foundation under a skyscraper"
             },
             {
-              "id": "s3",
-              "title": "概念化与傀儡",
+              "id": "sk9dh7g",
+              "title": "条目一",
+              "title_en": "",
               "level": 3,
               "spoiler": 0,
-              "body": "如果力量变强但印记没有变大，行者就会陷入危险，很有可能**概念化**。概念化是不可逆转的，他们都会变成概念的**傀儡**。",
-              "title_en": "Conceptualization and Puppets",
-              "body_en": "If the power grows but the Mark does not, the Walker is in danger of **conceptualization**. It is irreversible: they all become the concept’s **puppets**."
+              "body": "印记是一种以法阵为媒介的[[媒介物]]||，通过共鸣的法则，将这些媒介物作用于意识体身上||。印记能提高意识体的侵蚀耐受性，让普通人也能承受住概念的侵蚀。\n\n当行者使用力量时，印记会将代价传导至其他地方或者意识体，通过代偿的方式让行者近乎无偿的使用能力。||[[共鸣印记]]就是将代价传递给共鸣主||",
+              "body_en": ""
             },
             {
               "id": "s4",
@@ -94,6 +94,51 @@
               "spoiler": 0,
               "body": "",
               "title_en": "Tiers",
+              "body_en": ""
+            },
+            {
+              "id": "s4vsp9f",
+              "title": "一阶",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sqznrnw",
+              "title": "二阶",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "sc7pgcv",
+              "title": "三阶",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 0,
+              "body": "",
+              "body_en": ""
+            },
+            {
+              "id": "snu3wod",
+              "title": "四阶",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 0,
+              "body": "代称：[[序列]]",
+              "body_en": ""
+            },
+            {
+              "id": "sg4gdbe",
+              "title": "五阶",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 0,
+              "body": "代称：[[人神]]",
               "body_en": ""
             }
           ],
