@@ -268,3 +268,5 @@ body.editing .main { outline: 2px dashed color-mix(in srgb, var(--accent-2) 30%,
 
 /* 设定栏里被隐藏的剧透字段 */
 .infobox td.ib-hidden { text-align: center; color: var(--accent); cursor: pointer; font-size: 13px; background: color-mix(in srgb, var(--accent) 6%, transparent); }
+/* 剧透遮挡条里的链接、粗体等：未点开前一律透明、不可点击 */
+.spoiler-inline:not(.shown) * { color: transparent !important; text-decoration: none !important; background: transparent !important; pointer-events: none; }
