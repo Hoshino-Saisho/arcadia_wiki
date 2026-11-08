@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794154543434,
+  "updatedAt": 1794156232410,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -27,9 +27,9 @@
       "pages": [
         {
           "id": "conceptology",
-          "title": "概念学",
+          "title": "基本常识",
           "subtitle": "Conceptology",
-          "summary": "**概念学**是《理想乡》的世界观基础。世界上常见的抽象概念——愤怒、自由、命运——都是拥有意志的存在，被称为**概念**。与概念交易、获得力量的人类被称为[[行者]]。",
+          "summary": "",
           "spoiler": 0,
           "sections": [
             {
@@ -124,7 +124,10 @@
             }
           ],
           "title_en": "Conceptology",
-          "summary_en": "**Conceptology** is the foundation of ARCADIA’s world. Everyday abstract ideas — anger, freedom, fate — are beings with wills of their own, called **Concepts**. Humans who strike deals with them and gain power are called [[Walker|Walkers]]."
+          "summary_en": "**Conceptology** is the foundation of ARCADIA’s world. Everyday abstract ideas — anger, freedom, fate — are beings with wills of their own, called **Concepts**. Humans who strike deals with them and gain power are called [[Walker|Walkers]].",
+          "subtitle_en": "",
+          "aliases": [],
+          "aliases_en": []
         },
         {
           "id": "eras",
@@ -782,82 +785,6 @@
           "sections": []
         },
         {
-          "id": "c5x339v",
-          "group": "human",
-          "title": "特莉丝 晨星",
-          "title_en": "Teris Morningstar",
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary": "",
-          "image": "",
-          "spoiler": 0,
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name",
-              "v": "Teris Morningstar",
-              "v_en": "特莉丝 晨星",
-              "spoiler": 0
-            },
-            {
-              "k": "年龄",
-              "k_en": "Age",
-              "v": "17（心理年龄）",
-              "v_en": "17 (mental age)",
-              "spoiler": 0
-            },
-            {
-              "k": "阶级",
-              "k_en": "Tier",
-              "v": "四阶行者",
-              "v_en": "Tier Four",
-              "spoiler": 0
-            },
-            {
-              "k": "所属",
-              "k_en": "Affiliation",
-              "v": "无",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance",
-              "v": "第一章",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "特殊身份",
-              "k_en": "",
-              "v": "克隆人",
-              "v_en": "Clone",
-              "spoiler": 0
-            },
-            {
-              "k": "心之境",
-              "k_en": "Heartrealm",
-              "v": "启蒙矩阵",
-              "v_en": "Matrix of Enlightenment",
-              "spoiler": 0
-            }
-          ],
-          "sections": [
-            {
-              "id": "sebqahz",
-              "title": "特莉丝 晨星",
-              "title_en": "Teris Morningstar",
-              "level": 2,
-              "spoiler": 0,
-              "body": "共鸣主之女||，也是造物主和救世主的女儿。身为他们三人的女儿，||她是由特殊技巧||，让三人神的灵魂和理念取其精华，去其糟粕||所造，虽然被称为克隆人，但其实并没有使用克隆的技术，而是使用了[[逆行]]技术||，通过三人神在世界所留下的侵蚀提取出的理念，||凝聚出的特殊肉体。\n\n她完美的继承了||造物主的调皮和天真，救世主的中二与好色，以及||共鸣主对世界的爱。虽然共鸣主总跟她说不必着急，但在世界的表现||与【恶运】||的影响下，她下定了决心，去拯救这个世界。",
-              "body_en": ""
-            }
-          ],
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": []
-        },
-        {
           "id": "c3gj8n7",
           "group": "human",
           "title": "共鸣主",
@@ -1417,6 +1344,62 @@
               "k": "行者类型",
               "k_en": "Current Sequence",
               "v": "审判",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cd7oq9a",
+          "group": "human",
+          "title": "启灵主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "未知",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "五阶～六阶",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "启蒙行者",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "无",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "致无法共鸣的你，第五章",
               "v_en": "",
               "spoiler": 0
             }
