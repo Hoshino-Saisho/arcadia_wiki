@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794153585021,
+  "updatedAt": 1794154543434,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -10,31 +10,12 @@
       {
         "label": "不剧透（只看基础设定）",
         "label_en": "No spoilers (basics only)"
-      },
-      {
-        "label": "读完【致无法共鸣的你】，第一篇",
-        "label_en": "Finished [To You Who Cannot Resonate], Part One"
-      },
-      {
-        "label": "读完【致无法共鸣的你】，第二篇",
-        "label_en": "Finished [To You Who Cannot Resonate], Part Two"
-      },
-      {
-        "label": "读完【致无法共鸣的你】，第三篇",
-        "label_en": "Finished [To You Who Cannot Resonate], Part Three"
-      },
-      {
-        "label": "读完【致无法共鸣的你】，第四篇",
-        "label_en": "Finished [To You Who Cannot Resonate], Part Four"
-      },
-      {
-        "label": "读完【致无法共鸣的你】，第五篇",
-        "label_en": "Finished [To You Who Cannot Resonate], Part Five"
       }
     ],
     "title_en": "ARCADIA Wiki",
     "subtitle_en": "A world guide to ARCADIA",
-    "intro_en": "Welcome to the world wiki of *ARCADIA*.\nPick your **reading progress** at the top — spoilers beyond it are hidden until you click them."
+    "intro_en": "Welcome to the world wiki of *ARCADIA*.\nPick your **reading progress** at the top — spoilers beyond it are hidden until you click them.",
+    "publishedProgress": 0
   },
   "modules": [
     {
@@ -591,13 +572,6 @@
               "v": "第一篇 第一章",
               "v_en": "Part One, Chapter 1",
               "spoiler": 0
-            },
-            {
-              "k": "特殊身份",
-              "k_en": "",
-              "v": "纯粹容器",
-              "v_en": "",
-              "spoiler": 5
             }
           ],
           "sections": [
@@ -693,39 +667,11 @@
               "spoiler": 0
             },
             {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "审判行者",
-              "v_en": "Judgement Walker",
-              "spoiler": 1
-            },
-            {
-              "k": "序列",
-              "k_en": "Sequence",
-              "v": "序列十二【惩戒】",
-              "v_en": "Sequence Twelve 【Chastisement】",
-              "spoiler": 2
-            },
-            {
               "k": "阶级（第一章）",
               "k_en": "Tier(Charapter 1)",
               "v": "二阶",
               "v_en": "Tier Two",
               "spoiler": 0
-            },
-            {
-              "k": "阶级（第二章）",
-              "k_en": "Tier(Charapter 2)",
-              "v": "三阶",
-              "v_en": "Tier Three",
-              "spoiler": 1
-            },
-            {
-              "k": "心之境",
-              "k_en": "Heartrealm",
-              "v": "剑冢焚天",
-              "v_en": "Sword Tomb Burning Sky",
-              "spoiler": 5
             }
           ],
           "sections": [],
@@ -785,37 +731,6 @@
             "Old Geezer"
           ],
           "subtitle_en": ""
-        },
-        {
-          "id": "chaos",
-          "group": "concept",
-          "title": "混乱",
-          "subtitle": "",
-          "image": "",
-          "spoiler": 1,
-          "summary": "六面体之一，与永恒对立。说话的语序是乱的。",
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "English name",
-              "v": "Chaos",
-              "v_en": "Chaos",
-              "spoiler": 0
-            },
-            {
-              "k": "类别",
-              "k_en": "Class",
-              "v": "六面体",
-              "v_en": "The Hexahedra",
-              "spoiler": 0
-            }
-          ],
-          "sections": [],
-          "title_en": "Chaos",
-          "summary_en": "One of the Hexahedra, opposed to Eternity. Its word order is scrambled.",
-          "aliases_en": [],
-          "subtitle_en": "",
-          "aliases": []
         },
         {
           "id": "c41ozz4",
@@ -897,13 +812,6 @@
               "v": "四阶行者",
               "v_en": "Tier Four",
               "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "启蒙行者",
-              "v_en": "Enlightenment Walker",
-              "spoiler": 4
             },
             {
               "k": "所属",
@@ -1001,13 +909,6 @@
               "v": "第一章",
               "v_en": "",
               "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "完美",
-              "v_en": "Perfection",
-              "spoiler": 3
             }
           ],
           "sections": [],
@@ -1067,13 +968,6 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "【绝对】",
-              "v_en": "",
-              "spoiler": 3
             }
           ],
           "sections": []
@@ -1130,13 +1024,6 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "【极致】",
-              "v_en": "",
-              "spoiler": 3
             }
           ],
           "sections": []
@@ -1158,13 +1045,6 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
-            },
-            {
-              "k": "创造者",
-              "k_en": "Maker",
-              "v": "[[造物主]]",
-              "v_en": "[[The Creator]]",
-              "spoiler": 3
             }
           ],
           "sections": []
@@ -1448,13 +1328,6 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Current Sequence",
-              "v": "恶运",
-              "v_en": "",
-              "spoiler": 5
             }
           ],
           "sections": []
@@ -1513,13 +1386,6 @@
               "spoiler": 0
             },
             {
-              "k": "真实名字",
-              "k_en": "Real name",
-              "v": "维利塔斯？",
-              "v_en": "Veritas?",
-              "spoiler": 3
-            },
-            {
               "k": "行者类型",
               "k_en": "Current Sequence",
               "v": "真相",
@@ -1548,13 +1414,6 @@
               "spoiler": 0
             },
             {
-              "k": "真实名字",
-              "k_en": "Real name",
-              "v": "希罗",
-              "v_en": "",
-              "spoiler": 2
-            },
-            {
               "k": "行者类型",
               "k_en": "Current Sequence",
               "v": "审判",
@@ -1563,51 +1422,6 @@
             }
           ],
           "sections": []
-        },
-        {
-          "id": "cduyrce",
-          "group": "giu5hkk",
-          "title": "安娜",
-          "title_en": "Ana",
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary": "",
-          "image": "",
-          "spoiler": 5,
-          "infobox": [
-            {
-              "k": "序列编号",
-              "k_en": "Sequence",
-              "v": "无编号",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "代号",
-              "k_en": "Real name",
-              "v": "【记录者】",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Current Sequence",
-              "v": "记录",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "特殊身份",
-              "k_en": "",
-              "v": "理智四方之一：记录",
-              "v_en": "",
-              "spoiler": 0
-            }
-          ],
-          "sections": [],
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": []
         }
       ],
       "title_en": "Characters",
@@ -1643,8 +1457,8 @@
       "eras": [
         {
           "id": "eqs9em2",
-          "title": "前文明",
-          "title_en": "The Previous Era",
+          "title": "",
+          "title_en": "",
           "from": -5000,
           "to": -1100,
           "color": "#8a7f6a",
@@ -1757,131 +1571,6 @@
           "sections": [],
           "title_en": "The High-School Kidnapping",
           "summary_en": "[[Starmorni]] is kidnapped — and fights his way from the warehouse’s second floor to the ground floor in ten seconds."
-        },
-        {
-          "id": "resonator-death",
-          "title": "共鸣主的第一次死亡",
-          "spoiler": 2,
-          "date": {
-            "label": "第二篇",
-            "label_en": "Part Two",
-            "sort": 2,
-            "timeline": "book1"
-          },
-          "summary": "共鸣印记消失，世界收到“共鸣主已陨落”的消息。",
-          "infobox": [],
-          "sections": [],
-          "title_en": "First death of the Resonator",
-          "summary_en": "Resonance Marks flicker, and the world receives the news: the Resonator has fallen.",
-          "subtitle": "",
-          "subtitle_en": "",
-          "aliases": [],
-          "aliases_en": [],
-          "image": ""
-        },
-        {
-          "id": "eclh8n4",
-          "title": "第一场人神游戏开始",
-          "title_en": "Begining of The First Human-God Game",
-          "summary": "",
-          "spoiler": 4,
-          "infobox": [],
-          "sections": [
-            {
-              "id": "sbnrh2i",
-              "title": "开始原因",
-              "title_en": "",
-              "level": 2,
-              "spoiler": 0,
-              "body": "叛者杀死了哲者和行者，并成为第一个获得概念力量的前人类。\n\n通过概念的力量，将所有人的脑海里植入模因病毒，让他们开始盲目的质疑，从而被其他五位人神围攻。",
-              "body_en": ""
-            }
-          ],
-          "date": {
-            "label": "近三千九百年之前",
-            "label_en": "",
-            "sort": -3900,
-            "timeline": "history"
-          },
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": [],
-          "image": ""
-        },
-        {
-          "id": "e1crbnr",
-          "title": "第二场人神游戏开始",
-          "title_en": "Begining of The Second Human-God Game",
-          "summary": "",
-          "spoiler": 4,
-          "infobox": [],
-          "sections": [],
-          "date": {
-            "label": "近两千八百年前",
-            "label_en": "",
-            "sort": -2850,
-            "timeline": "history"
-          },
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": [],
-          "image": ""
-        },
-        {
-          "id": "e6cu99i",
-          "title": "第一场人神游戏结束",
-          "title_en": "End of The First Human-God Game",
-          "summary": "",
-          "spoiler": 4,
-          "infobox": [],
-          "sections": [
-            {
-              "id": "sshpjes",
-              "title": "",
-              "title_en": "",
-              "level": 2,
-              "spoiler": 0,
-              "body": "贤者的核弹落下，对死亡的恐惧破开了模因病毒，为大家争取了清醒的时间。\n\n众人神命令人类停下战斗，人类迎来了极其短暂的和平。\n\n全前人类开始思考存在的意义，而人神开始想方设法获得概念的力量。",
-              "body_en": ""
-            }
-          ],
-          "date": {
-            "label": "近两千九百年前",
-            "label_en": "",
-            "sort": -2900,
-            "timeline": "history"
-          },
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": [],
-          "image": ""
-        },
-        {
-          "id": "ea7hds7",
-          "title": "第二场人神游戏结束",
-          "title_en": "End of The Second Human-God Game",
-          "summary": "",
-          "spoiler": 4,
-          "infobox": [],
-          "sections": [],
-          "date": {
-            "label": "近一千一百多年前",
-            "label_en": "",
-            "sort": -1110,
-            "timeline": "history"
-          },
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": [],
-          "image": ""
         },
         {
           "id": "e1jckes",
