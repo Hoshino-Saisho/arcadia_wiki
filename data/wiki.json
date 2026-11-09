@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794256150613,
+  "updatedAt": 1794258070267,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -370,7 +370,7 @@
           "id": "pykxig7",
           "title": "人神",
           "title_en": "",
-          "summary": "",
+          "summary": "人神是第五阶，也是成为概念之前的那一道坎。\n\n选择继续当一位无知且懵懂的人类？还是成为全知且无情的神？\n\n人神就是在这两个选择中徘徊的，不人不神的存在。",
           "spoiler": 0,
           "sections": [
             {
@@ -381,8 +381,31 @@
               "spoiler": 0,
               "body": "【是人的神，是神的人；在凡人之上，在神明之下；以人之念，使神之权。】",
               "body_en": ""
+            },
+            {
+              "id": "sa98tdu",
+              "title": "特性",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "概念无法直接成为人神，它们必须先从规则创造出一个使者，成为序列，然后再升格成为人神。",
+              "body_en": ""
+            },
+            {
+              "id": "st6f35r",
+              "title": "例子：虚无",
+              "title_en": "",
+              "level": 3,
+              "spoiler": 5,
+              "body": "虚无正是第一个降格成为序列再升格成人神的例子，也是最好的例子。",
+              "body_en": ""
             }
-          ]
+          ],
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
         },
         {
           "id": "p9pue10",
@@ -427,6 +450,47 @@
           "summary": "",
           "spoiler": 0,
           "sections": []
+        },
+        {
+          "id": "pflojsq",
+          "title": "成为序列",
+          "title_en": "",
+          "summary": "序列作为能够创造法则并影响部分世界的存在，他们的存在需要遭到严格的管控。\n\n序列的实力仅次于人神。但在概念眼里，他们和普通人没有太大的区别，毕竟无法强行应对概念的侵蚀。所以序列必须要隐藏好自身的实力。也因此，||[[本能]]||会自动筛选人选，只有通过筛选的才能从三阶升为四阶序列，换句话说，就是脱离人类的范畴。\n\n同样，概念也可以通过[[降格]]成为序列，再依靠着不断吸收人性成为人神。",
+          "spoiler": 0,
+          "sections": [
+            {
+              "id": "sm41glz",
+              "title": "公开序列",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "公开的序列正是显示在序列刻录的那几位，通常以序列+数字称呼。但数字并不完全代表先后和等级。\n\n例如：序列一，公平。",
+              "body_en": ""
+            },
+            {
+              "id": "sjnxlfn",
+              "title": "非公开序列",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "不是所有序列都是公开的。大部分序列都躲在世界的各处，各司其职。这些非公开的序列不会出现在普通人的眼中。为了同样逃离概念的感知，他们获得的存在感很少很少，相应的能力也压制到和三阶一样。\n\n但对于概念来说，他们的危险其实比公开序列更大。对于概念来说，这些未公开的序列不仅能力未知，所在的位置和原本实力都是不确定数。",
+              "body_en": ""
+            },
+            {
+              "id": "sy14u4a",
+              "title": "特性",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 5,
+              "body": "【每一个序列都可以主动成为人神】",
+              "body_en": ""
+            }
+          ],
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
         }
       ],
       "title_en": "World Basics",
@@ -479,40 +543,6 @@
           "spoiler": 0
         },
         {
-          "id": "concept",
-          "title": "概念",
-          "intro": "拥有意志的概念。",
-          "fields": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name"
-            },
-            {
-              "k": "类别",
-              "k_en": "Class"
-            },
-            {
-              "k": "立场",
-              "k_en": ""
-            },
-            {
-              "k": "行者",
-              "k_en": "Walker"
-            },
-            {
-              "k": "使者",
-              "k_en": "Envoy"
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance"
-            }
-          ],
-          "title_en": "Concepts",
-          "intro_en": "Concepts with wills of their own.",
-          "spoiler": 0
-        },
-        {
           "id": "special",
           "title": "特殊",
           "intro": "模因生命，角色的另一面，守护神、至高等存在。",
@@ -553,6 +583,68 @@
               "k_en": "Current Sequence"
             }
           ],
+          "intro_en": "",
+          "spoiler": 0
+        },
+        {
+          "id": "grqxi37",
+          "title": "人神",
+          "title_en": "",
+          "intro": "",
+          "fields": [
+            {
+              "k": "真名",
+              "k_en": "Real name"
+            },
+            {
+              "k": "尊名",
+              "k_en": ""
+            },
+            {
+              "k": "所定义的概念",
+              "k_en": ""
+            },
+            {
+              "k": "立场",
+              "k_en": ""
+            },
+            {
+              "k": "特殊身份",
+              "k_en": ""
+            }
+          ]
+        },
+        {
+          "id": "concept",
+          "title": "概念",
+          "intro": "概念是规则的化身，还是被认为的化身？",
+          "fields": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name"
+            },
+            {
+              "k": "类别",
+              "k_en": "Class"
+            },
+            {
+              "k": "立场",
+              "k_en": ""
+            },
+            {
+              "k": "行者",
+              "k_en": "Walker"
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy"
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance"
+            }
+          ],
+          "title_en": "Concepts",
           "intro_en": "",
           "spoiler": 0
         }
@@ -879,7 +971,7 @@
             {
               "k": "立场",
               "k_en": "",
-              "v": "友方",
+              "v": "人类",
               "v_en": "",
               "spoiler": 0
             },
@@ -982,226 +1074,13 @@
               "title_en": "Teris Morningstar",
               "level": 2,
               "spoiler": 0,
-              "body": "共鸣主之女||，也是造物主和救世主的女儿。身为他们三人的女儿，||她是由特殊技巧||，让三人神的灵魂和理念取其精华，去其糟粕||所造，虽然被称为克隆人，但其实并没有使用克隆的技术，而是使用了[[逆行]]技术||，通过三人神在世界所留下的侵蚀提取出的理念，||凝聚出的特殊肉体。\n\n她完美的继承了||造物主的调皮和天真，救世主的中二与好色，以及||共鸣主对世界的爱。虽然共鸣主总跟她说不必着急，但在世界的表现||与【恶运】||的影响下，她下定了决心，去拯救这个世界。",
+              "body": "共鸣主之女||，也是造物主和救世主的女儿。身为他们三人的女儿，||她是由特殊技巧||，让三人神的灵魂和理念取其精华，去其糟粕||所造，虽然被称为克隆人，但其实并没有使用克隆的技术，而是使用了[[逆行]]技术||，通过三人神在世界所留下的侵蚀提取出的理念而||凝聚出的特殊肉体。\n\n她完美的继承了||造物主的调皮和天真，救世主的中二与好色，以及||共鸣主对世界的爱。虽然共鸣主总跟她说不必着急，但在世界的表现||与【恶运】||的影响下让她下定了决心，发誓要去拯救这个世界。",
               "body_en": ""
             }
           ],
           "summary_en": "",
           "aliases": [],
           "aliases_en": []
-        },
-        {
-          "id": "c3gj8n7",
-          "group": "human",
-          "title": "共鸣主",
-          "title_en": "The Resonator",
-          "subtitle": "维利塔斯 亚特里克 德拉玛",
-          "subtitle_en": "Veritas Yatrike Drama",
-          "summary": "",
-          "image": "",
-          "spoiler": 0,
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name",
-              "v": "Veritas Yatrike Drama",
-              "v_en": "维利塔斯 亚特里克 德拉玛",
-              "spoiler": 0
-            },
-            {
-              "k": "年龄",
-              "k_en": "Age",
-              "v": "～200",
-              "v_en": "～200",
-              "spoiler": 0
-            },
-            {
-              "k": "阶级",
-              "k_en": "Tier",
-              "v": "五阶",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "共鸣行者",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "所属",
-              "k_en": "Affiliation",
-              "v": "官方",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance",
-              "v": "第一章",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "完美",
-              "v_en": "Perfection",
-              "spoiler": 3
-            },
-            {
-              "k": "对应六面体",
-              "k_en": "",
-              "v": "混乱",
-              "v_en": "Chaos",
-              "spoiler": 0
-            }
-          ],
-          "sections": [],
-          "summary_en": "",
-          "aliases": [],
-          "aliases_en": []
-        },
-        {
-          "id": "cx7060d",
-          "group": "human",
-          "title": "造物主",
-          "title_en": "The Creator",
-          "subtitle": "李天明",
-          "subtitle_en": "",
-          "summary": "",
-          "image": "",
-          "spoiler": 0,
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name",
-              "v": "",
-              "v_en": "李天明",
-              "spoiler": 0
-            },
-            {
-              "k": "年龄",
-              "k_en": "Age",
-              "v": "未知",
-              "v_en": "Unkown",
-              "spoiler": 0
-            },
-            {
-              "k": "阶级",
-              "k_en": "Tier",
-              "v": "五阶～六阶",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "造物行者",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "所属",
-              "k_en": "Affiliation",
-              "v": "无",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance",
-              "v": "",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "【绝对】",
-              "v_en": "",
-              "spoiler": 3
-            },
-            {
-              "k": "对应六面体",
-              "k_en": "",
-              "v": "永恒",
-              "v_en": "",
-              "spoiler": 0
-            }
-          ],
-          "sections": []
-        },
-        {
-          "id": "c6z623h",
-          "group": "human",
-          "title": "救世主",
-          "title_en": "The Savior",
-          "subtitle": "岚",
-          "subtitle_en": "Gale",
-          "summary": "",
-          "image": "",
-          "spoiler": 0,
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name",
-              "v": "Gale",
-              "v_en": "岚",
-              "spoiler": 0
-            },
-            {
-              "k": "年龄",
-              "k_en": "Age",
-              "v": "未知",
-              "v_en": "Unkown",
-              "spoiler": 0
-            },
-            {
-              "k": "阶级",
-              "k_en": "Tier",
-              "v": "五阶～六阶",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "救世行者",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "所属",
-              "k_en": "Affiliation",
-              "v": "官方",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance",
-              "v": "",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "面见至高",
-              "k_en": "Supreme",
-              "v": "【极致】",
-              "v_en": "",
-              "spoiler": 3
-            },
-            {
-              "k": "对应六面体",
-              "k_en": "",
-              "v": "虚无",
-              "v_en": "",
-              "spoiler": 0
-            }
-          ],
-          "sections": []
         },
         {
           "id": "cg0cnmh",
@@ -1672,69 +1551,6 @@
           "aliases_en": []
         },
         {
-          "id": "cd7oq9a",
-          "group": "human",
-          "title": "启灵主",
-          "title_en": "",
-          "subtitle": "",
-          "subtitle_en": "",
-          "summary": "",
-          "image": "",
-          "spoiler": 0,
-          "infobox": [
-            {
-              "k": "英文名",
-              "k_en": "Chinese name",
-              "v": "",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "年龄",
-              "k_en": "Age",
-              "v": "未知",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "阶级",
-              "k_en": "Tier",
-              "v": "五阶～六阶",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "行者类型",
-              "k_en": "Walker type",
-              "v": "启蒙行者",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "所属",
-              "k_en": "Affiliation",
-              "v": "无",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "首次登场",
-              "k_en": "First appearance",
-              "v": "致无法共鸣的你，第五章",
-              "v_en": "",
-              "spoiler": 0
-            },
-            {
-              "k": "心之境",
-              "k_en": "Heartrealm",
-              "v": "启蒙矩阵",
-              "v_en": "",
-              "spoiler": 5
-            }
-          ],
-          "sections": []
-        },
-        {
           "id": "c7alt6e",
           "group": "concept",
           "title": "时间",
@@ -1786,6 +1602,286 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cqzjzog",
+          "group": "grqxi37",
+          "title": "造物主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "真名",
+              "k_en": "Real name",
+              "v": "李天明",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "尊名",
+              "k_en": "",
+              "v": "造神者，弑神者，创世的造主",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所定义的概念",
+              "k_en": "",
+              "v": "造物，创世，造神，弑神，律令",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "人类",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "前人类",
+              "v_en": "",
+              "spoiler": 3
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cd4v844",
+          "group": "grqxi37",
+          "title": "救世主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "真名",
+              "k_en": "Real name",
+              "v": "岚",
+              "v_en": "Gale",
+              "spoiler": 0
+            },
+            {
+              "k": "尊名",
+              "k_en": "",
+              "v": "逆行者，灭世者，无私的救主",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所定义的概念",
+              "k_en": "",
+              "v": "救世，逆行",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "人类",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "前世界意志",
+              "v_en": "",
+              "spoiler": 5
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "c7p9jr5",
+          "group": "grqxi37",
+          "title": "共鸣主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "真名",
+              "k_en": "Real name",
+              "v": "维利塔斯 亚特里克 德拉玛",
+              "v_en": "Veritas Yatrike Drama",
+              "spoiler": 0
+            },
+            {
+              "k": "尊名",
+              "k_en": "",
+              "v": "众君王，万魂引，共鸣的君王",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所定义的概念",
+              "k_en": "",
+              "v": "共鸣，意外",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "人类",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "模因生命",
+              "v_en": "",
+              "spoiler": 3
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cekl6d2",
+          "group": "grqxi37",
+          "title": "启灵主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "真名",
+              "k_en": "Real name",
+              "v": "特莉丝 晨星",
+              "v_en": "Teris Morningstar",
+              "spoiler": 4
+            },
+            {
+              "k": "尊名",
+              "k_en": "",
+              "v": "觉醒者，慧识者，启明的识主",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "所定义的概念",
+              "k_en": "",
+              "v": "启蒙，慧识，淬火",
+              "v_en": "",
+              "spoiler": 4
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "人类",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "克隆人",
+              "v_en": "",
+              "spoiler": 4
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cf4041g",
+          "group": "special",
+          "title": "灭世主",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "灭世主",
+              "spoiler": 0
+            },
+            {
+              "k": "本体",
+              "k_en": "Body",
+              "v": "救世主",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cp15c5s",
+          "group": "special",
+          "title": "暴君",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "暴君",
+              "spoiler": 0
+            },
+            {
+              "k": "本体",
+              "k_en": "Body",
+              "v": "共鸣主",
+              "v_en": "",
+              "spoiler": 3
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cmduemy",
+          "group": "special",
+          "title": "执念",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "执念",
+              "spoiler": 0
+            },
+            {
+              "k": "本体",
+              "k_en": "Body",
+              "v": "启灵主",
+              "v_en": "",
+              "spoiler": 5
             }
           ],
           "sections": []
