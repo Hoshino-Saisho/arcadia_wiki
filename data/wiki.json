@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794247028053,
+  "updatedAt": 1794248285580,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -131,8 +131,8 @@
         },
         {
           "id": "eras",
-          "title": "三大纪元",
-          "summary": "根据史书《造物纪全篇》《救世纪全篇》和《共鸣纪●始》，世界历史分为三个纪元。时间线见[事件模块](#/m/events)。",
+          "title": "史纪",
+          "summary": "“我是【[[时间]]】，我要和你们做一场交易。\n让每位被选中的人神的寿命减至300年，换来你们的传说。”",
           "spoiler": 0,
           "sections": [
             {
@@ -140,31 +140,35 @@
               "title": "造物纪",
               "level": 2,
               "spoiler": 0,
-              "body": "[[造物主]]创造了万物，并发现了概念，对概念进行了深度的实验。随后灾难降临，概念开始入侵现实，造物主因此陨落。",
+              "body": "【此乃我界！神明不存！】",
               "title_en": "Era of Creation",
-              "body_en": "[[The Creator]] made all things and discovered the concepts, experimenting on them deeply. Then disaster struck: concepts began invading reality, and the Creator fell."
+              "body_en": ""
             },
             {
               "id": "e2",
               "title": "救世纪",
               "level": 2,
               "spoiler": 0,
-              "body": "一位名为[[救世主]]的人与概念抗衡，最终以陷入疯狂为代价，换回了世界的一丝生存的可能性。",
+              "body": "【倘若一切皆无意义，那我可以做任何事，包括反抗！】",
               "title_en": "Era of Salvation",
-              "body_en": "A man called [[The Savior]] stood against the concepts. In the end, at the cost of his sanity, he won back a sliver of hope for the world."
+              "body_en": ""
             },
             {
               "id": "e3",
               "title": "共鸣纪",
               "level": 2,
               "spoiler": 0,
-              "body": "辉煌的共鸣纪，也就是现在。[[共鸣主]]与概念立下契约，共鸣印记便这样诞生了。",
+              "body": "【嘘，安静，聆听无知者们的求知欲】",
               "title_en": "Era of Resonance",
-              "body_en": "The glorious Era of Resonance — the present. [[The Resonator]] made a pact with the concepts, and Resonance Marks were born."
+              "body_en": ""
             }
           ],
           "title_en": "The Three Eras",
-          "summary_en": "According to the Chronicles — *The Era of Creation: Complete*, *The Era of Salvation: Complete* and *The Era of Resonance●Genesis* — history is divided into three eras. See the [timeline](#/m/events)."
+          "summary_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "aliases": [],
+          "aliases_en": []
         },
         {
           "id": "phbvr19",
@@ -453,11 +457,15 @@
           "fields": [
             {
               "k": "英文名",
-              "k_en": "English name"
+              "k_en": "Chinese name"
             },
             {
               "k": "类别",
               "k_en": "Class"
+            },
+            {
+              "k": "立场",
+              "k_en": ""
             },
             {
               "k": "行者",
@@ -483,7 +491,7 @@
           "fields": [
             {
               "k": "英文名",
-              "k_en": "English name"
+              "k_en": "Chinese name"
             },
             {
               "k": "创造者",
@@ -697,24 +705,31 @@
           "infobox": [
             {
               "k": "英文名",
-              "v": "Extremity",
-              "spoiler": 0,
               "k_en": "English name",
-              "v_en": "Extremity"
+              "v": "Extremity",
+              "v_en": "Extremity",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "中立偏友",
+              "v_en": "",
+              "spoiler": 0
             },
             {
               "k": "行者",
-              "v": "[[星晨]]",
-              "spoiler": 0,
               "k_en": "Walker",
-              "v_en": "[[Starmorni]]"
+              "v": "[[星晨]]",
+              "v_en": "[[Starmorni]]",
+              "spoiler": 0
             },
             {
               "k": "代表能力",
-              "v": "【万物归极】",
-              "spoiler": 0,
               "k_en": "Signature ability",
-              "v_en": "【All Things to the Extreme】"
+              "v": "【万物归极】",
+              "v_en": "【All Things to the Extreme】",
+              "spoiler": 0
             }
           ],
           "sections": [
@@ -761,9 +776,16 @@
               "spoiler": 0
             },
             {
+              "k": "立场",
+              "k_en": "",
+              "v": "友方",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
               "k": "行者",
               "k_en": "Walker",
-              "v": "",
+              "v": "救世主",
               "v_en": "",
               "spoiler": 0
             },
@@ -1400,6 +1422,55 @@
               "k": "首次登场",
               "k_en": "First appearance",
               "v": "致无法共鸣的你，第五章",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "c7alt6e",
+          "group": "concept",
+          "title": "时间",
+          "title_en": "Time",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "Time",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "中立",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "类别",
+              "k_en": "Class",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy",
+              "v": "暂无",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
               "v_en": "",
               "spoiler": 0
             }
