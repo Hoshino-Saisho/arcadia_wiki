@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794248863807,
+  "updatedAt": 1794251429121,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -764,7 +764,7 @@
           ],
           "image": "",
           "spoiler": 0,
-          "summary": "[[星晨]]所签约的概念，在他的脑海里说话，被他叫作“老登”。",
+          "summary": "",
           "infobox": [
             {
               "k": "英文名",
@@ -801,13 +801,13 @@
               "title": "能力",
               "level": 2,
               "spoiler": 0,
-              "body": "极端的能力很简单：极端化，和不断的极端化。\n\n两个极端行者打起来就是一场灾难——你打我，我变强；我打你，你变强。",
+              "body": "",
               "title_en": "Abilities",
-              "body_en": "Extremity’s power is simple: extremize, and keep extremizing.\n\nWhen two Extremity Walkers fight it’s a disaster — you hit me, I get stronger; I hit you, you get stronger."
+              "body_en": ""
             }
           ],
           "title_en": "Extremity",
-          "summary_en": "The concept [[Starmorni]] made a deal with. It talks inside his head, and he calls it “Old Geezer”.",
+          "summary_en": "",
           "aliases_en": [
             "Old Geezer"
           ],
@@ -1836,7 +1836,7 @@
           "title": "造物纪",
           "title_en": "Era of Creation",
           "from": -1100,
-          "to": -800,
+          "to": -880,
           "color": "#b38b2e",
           "spoiler": 0
         },
@@ -1844,7 +1844,7 @@
           "id": "eey8vxu",
           "title": "救世纪",
           "title_en": "Era of Salvation",
-          "from": -800,
+          "from": -880,
           "to": -100,
           "color": "#3b6e8f",
           "spoiler": 0
@@ -2075,7 +2075,7 @@
           "date": {
             "label": "",
             "label_en": "",
-            "sort": -101,
+            "sort": -201,
             "timeline": "history"
           },
           "subtitle": "",
@@ -2098,7 +2098,13 @@
             "label_en": "",
             "sort": -201,
             "timeline": "history"
-          }
+          },
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
         }
       ],
       "title_en": "Events",
@@ -2230,5 +2236,6 @@
       ],
       "intro_en": ""
     }
-  ]
+  ],
+  "notices": []
 }
