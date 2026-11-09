@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794248625183,
+  "updatedAt": 1794248863807,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -10,12 +10,32 @@
       {
         "label": "不剧透（只看基础设定）",
         "label_en": "No spoilers (basics only)"
+      },
+      {
+        "label": "读完【致无法共鸣的你】，第一篇",
+        "label_en": "Finished [To You Who Cannot Resonate], Part One"
+      },
+      {
+        "label": "读完【致无法共鸣的你】，第二篇",
+        "label_en": "Finished [To You Who Cannot Resonate], Part Two"
+      },
+      {
+        "label": "读完【致无法共鸣的你】，第三篇",
+        "label_en": "Finished [To You Who Cannot Resonate], Part Three"
+      },
+      {
+        "label": "读完【致无法共鸣的你】，第四篇",
+        "label_en": "Finished [To You Who Cannot Resonate], Part Four"
+      },
+      {
+        "label": "读完【致无法共鸣的你】，第五篇",
+        "label_en": "Finished [To You Who Cannot Resonate], Part Five"
       }
     ],
     "title_en": "ARCADIA Wiki",
     "subtitle_en": "A world guide to ARCADIA",
     "intro_en": "Welcome to the world wiki of *ARCADIA*.\nPick your **reading progress** at the top — spoilers beyond it are hidden until you click them.",
-    "publishedProgress": 0
+    "publishedProgress": 5
   },
   "modules": [
     {
@@ -591,6 +611,13 @@
               "v": "第一篇 第一章",
               "v_en": "Part One, Chapter 1",
               "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "纯粹容器",
+              "v_en": "",
+              "spoiler": 5
             }
           ],
           "sections": [
@@ -686,11 +713,39 @@
               "spoiler": 0
             },
             {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "审判行者",
+              "v_en": "Judgement Walker",
+              "spoiler": 1
+            },
+            {
+              "k": "序列",
+              "k_en": "Sequence",
+              "v": "序列十二【惩戒】",
+              "v_en": "Sequence Twelve 【Chastisement】",
+              "spoiler": 2
+            },
+            {
               "k": "阶级（第一章）",
               "k_en": "Tier(Charapter 1)",
               "v": "二阶",
               "v_en": "Tier Two",
               "spoiler": 0
+            },
+            {
+              "k": "阶级（第二章）",
+              "k_en": "Tier(Charapter 2)",
+              "v": "三阶",
+              "v_en": "Tier Three",
+              "spoiler": 1
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm",
+              "v": "剑冢焚天",
+              "v_en": "Sword Tomb Burning Sky",
+              "spoiler": 5
             }
           ],
           "sections": [],
@@ -759,6 +814,44 @@
           "subtitle_en": ""
         },
         {
+          "id": "chaos",
+          "group": "concept",
+          "title": "混乱",
+          "subtitle": "",
+          "image": "",
+          "spoiler": 1,
+          "summary": "六面体之一，与永恒对立。说话的语序是乱的。",
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "English name",
+              "v": "Chaos",
+              "v_en": "Chaos",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "对立？",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "类别",
+              "k_en": "Class",
+              "v": "六面体",
+              "v_en": "The Hexahedra",
+              "spoiler": 0
+            }
+          ],
+          "sections": [],
+          "title_en": "Chaos",
+          "summary_en": "One of the Hexahedra, opposed to Eternity. Its word order is scrambled.",
+          "aliases_en": [],
+          "subtitle_en": "",
+          "aliases": []
+        },
+        {
           "id": "c41ozz4",
           "group": "concept",
           "title": "虚无",
@@ -815,6 +908,89 @@
           "sections": []
         },
         {
+          "id": "c5x339v",
+          "group": "human",
+          "title": "特莉丝 晨星",
+          "title_en": "Teris Morningstar",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 3,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "Teris Morningstar",
+              "v_en": "特莉丝 晨星",
+              "spoiler": 0
+            },
+            {
+              "k": "年龄",
+              "k_en": "Age",
+              "v": "17（心理年龄）",
+              "v_en": "17 (mental age)",
+              "spoiler": 0
+            },
+            {
+              "k": "阶级",
+              "k_en": "Tier",
+              "v": "四阶行者",
+              "v_en": "Tier Four",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Walker type",
+              "v": "启蒙行者",
+              "v_en": "Enlightenment Walker",
+              "spoiler": 4
+            },
+            {
+              "k": "所属",
+              "k_en": "Affiliation",
+              "v": "无",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "第一章",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "克隆人",
+              "v_en": "Clone",
+              "spoiler": 3
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm",
+              "v": "启蒙矩阵",
+              "v_en": "Matrix of Enlightenment",
+              "spoiler": 5
+            }
+          ],
+          "sections": [
+            {
+              "id": "sebqahz",
+              "title": "特莉丝 晨星",
+              "title_en": "Teris Morningstar",
+              "level": 2,
+              "spoiler": 0,
+              "body": "共鸣主之女||，也是造物主和救世主的女儿。身为他们三人的女儿，||她是由特殊技巧||，让三人神的灵魂和理念取其精华，去其糟粕||所造，虽然被称为克隆人，但其实并没有使用克隆的技术，而是使用了[[逆行]]技术||，通过三人神在世界所留下的侵蚀提取出的理念，||凝聚出的特殊肉体。\n\n她完美的继承了||造物主的调皮和天真，救世主的中二与好色，以及||共鸣主对世界的爱。虽然共鸣主总跟她说不必着急，但在世界的表现||与【恶运】||的影响下，她下定了决心，去拯救这个世界。",
+              "body_en": ""
+            }
+          ],
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
+        },
+        {
           "id": "c3gj8n7",
           "group": "human",
           "title": "共鸣主",
@@ -866,6 +1042,13 @@
               "v": "第一章",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "完美",
+              "v_en": "Perfection",
+              "spoiler": 3
             },
             {
               "k": "对应六面体",
@@ -934,6 +1117,13 @@
               "spoiler": 0
             },
             {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "【绝对】",
+              "v_en": "",
+              "spoiler": 3
+            },
+            {
               "k": "对应六面体",
               "k_en": "",
               "v": "永恒",
@@ -997,6 +1187,13 @@
               "spoiler": 0
             },
             {
+              "k": "面见至高",
+              "k_en": "Supreme",
+              "v": "【极致】",
+              "v_en": "",
+              "spoiler": 3
+            },
+            {
               "k": "对应六面体",
               "k_en": "",
               "v": "虚无",
@@ -1023,6 +1220,13 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "创造者",
+              "k_en": "Maker",
+              "v": "[[造物主]]",
+              "v_en": "[[The Creator]]",
+              "spoiler": 3
             }
           ],
           "sections": []
@@ -1306,6 +1510,13 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "恶运",
+              "v_en": "",
+              "spoiler": 5
             }
           ],
           "sections": []
@@ -1364,6 +1575,13 @@
               "spoiler": 0
             },
             {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "维利塔斯？",
+              "v_en": "Veritas?",
+              "spoiler": 3
+            },
+            {
               "k": "行者类型",
               "k_en": "Current Sequence",
               "v": "真相",
@@ -1392,6 +1610,13 @@
               "spoiler": 0
             },
             {
+              "k": "真实名字",
+              "k_en": "Real name",
+              "v": "希罗",
+              "v_en": "",
+              "spoiler": 2
+            },
+            {
               "k": "行者类型",
               "k_en": "Current Sequence",
               "v": "审判",
@@ -1400,6 +1625,51 @@
             }
           ],
           "sections": []
+        },
+        {
+          "id": "cduyrce",
+          "group": "giu5hkk",
+          "title": "安娜",
+          "title_en": "Ana",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 5,
+          "infobox": [
+            {
+              "k": "序列编号",
+              "k_en": "Sequence",
+              "v": "无编号",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "代号",
+              "k_en": "Real name",
+              "v": "【记录者】",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者类型",
+              "k_en": "Current Sequence",
+              "v": "记录",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "特殊身份",
+              "k_en": "",
+              "v": "理智四方之一：记录",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": [],
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": []
         },
         {
           "id": "cd7oq9a",
@@ -1453,6 +1723,13 @@
               "v": "致无法共鸣的你，第五章",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "心之境",
+              "k_en": "Heartrealm",
+              "v": "启蒙矩阵",
+              "v_en": "",
+              "spoiler": 5
             }
           ],
           "sections": []
@@ -1488,6 +1765,13 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "行者",
+              "k_en": "Walker",
+              "v": "时羽",
+              "v_en": "",
+              "spoiler": 5
             },
             {
               "k": "使者",
@@ -1540,8 +1824,8 @@
       "eras": [
         {
           "id": "eqs9em2",
-          "title": "",
-          "title_en": "",
+          "title": "前文明",
+          "title_en": "The Previous Era",
           "from": -5000,
           "to": -1100,
           "color": "#8a7f6a",
@@ -1654,6 +1938,131 @@
           "sections": [],
           "title_en": "The High-School Kidnapping",
           "summary_en": "[[Starmorni]] is kidnapped — and fights his way from the warehouse’s second floor to the ground floor in ten seconds."
+        },
+        {
+          "id": "resonator-death",
+          "title": "共鸣主的第一次死亡",
+          "spoiler": 2,
+          "date": {
+            "label": "第二篇",
+            "label_en": "Part Two",
+            "sort": 2,
+            "timeline": "book1"
+          },
+          "summary": "共鸣印记消失，世界收到“共鸣主已陨落”的消息。",
+          "infobox": [],
+          "sections": [],
+          "title_en": "First death of the Resonator",
+          "summary_en": "Resonance Marks flicker, and the world receives the news: the Resonator has fallen.",
+          "subtitle": "",
+          "subtitle_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
+        },
+        {
+          "id": "eclh8n4",
+          "title": "第一场人神游戏开始",
+          "title_en": "Begining of The First Human-God Game",
+          "summary": "",
+          "spoiler": 4,
+          "infobox": [],
+          "sections": [
+            {
+              "id": "sbnrh2i",
+              "title": "开始原因",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "叛者杀死了哲者和行者，并成为第一个获得概念力量的前人类。\n\n通过概念的力量，将所有人的脑海里植入模因病毒，让他们开始盲目的质疑，从而被其他五位人神围攻。",
+              "body_en": ""
+            }
+          ],
+          "date": {
+            "label": "近三千九百年之前",
+            "label_en": "",
+            "sort": -3900,
+            "timeline": "history"
+          },
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
+        },
+        {
+          "id": "e1crbnr",
+          "title": "第二场人神游戏开始",
+          "title_en": "Begining of The Second Human-God Game",
+          "summary": "",
+          "spoiler": 4,
+          "infobox": [],
+          "sections": [],
+          "date": {
+            "label": "近两千八百年前",
+            "label_en": "",
+            "sort": -2850,
+            "timeline": "history"
+          },
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
+        },
+        {
+          "id": "e6cu99i",
+          "title": "第一场人神游戏结束",
+          "title_en": "End of The First Human-God Game",
+          "summary": "",
+          "spoiler": 4,
+          "infobox": [],
+          "sections": [
+            {
+              "id": "sshpjes",
+              "title": "",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "贤者的核弹落下，对死亡的恐惧破开了模因病毒，为大家争取了清醒的时间。\n\n众人神命令人类停下战斗，人类迎来了极其短暂的和平。\n\n全前人类开始思考存在的意义，而人神开始想方设法获得概念的力量。",
+              "body_en": ""
+            }
+          ],
+          "date": {
+            "label": "近两千九百年前",
+            "label_en": "",
+            "sort": -2900,
+            "timeline": "history"
+          },
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
+        },
+        {
+          "id": "ea7hds7",
+          "title": "第二场人神游戏结束",
+          "title_en": "End of The Second Human-God Game",
+          "summary": "",
+          "spoiler": 4,
+          "infobox": [],
+          "sections": [],
+          "date": {
+            "label": "近一千一百多年前",
+            "label_en": "",
+            "sort": -1110,
+            "timeline": "history"
+          },
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary_en": "",
+          "aliases": [],
+          "aliases_en": [],
+          "image": ""
         },
         {
           "id": "e1jckes",
@@ -1789,6 +2198,15 @@
               "level": 2,
               "spoiler": 0,
               "body": "晶石是造物主||在全知领域中捕捉到的知识所凝聚出||的意识，具有概念十分渴望的||知识和||意识。是行者之间十分流通的货币。\n\n它可以帮助行者[[与概念交易]]，获得新的力量。",
+              "body_en": ""
+            },
+            {
+              "id": "sl90b5f",
+              "title": "预言",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 5,
+              "body": "晶石会带来预言，||从全知领域中获取的知识会通过一系列的操作凝结并[[降格]]，从而让||巨量的知识关进永恒的晶石里，将其保存。自然，里面会出现过去和未来的知识碎片，比如说某些人某些事的未来。\n\n这些未来通常都是以[[寓言]]，画作或者景象的方式展现。但这些未来很有可能是某人的思维中的幻想画面，而不是真正的现实画面。\n\n||“【被理智选中的人神，会在成为人神的三百年后死去，无一例外！】||\n\n||共鸣主：真的假的？我怎么才活了一百年？||\n\n||造物主：谁让你天天穿越时间线，没准是在时间乱流中浪费了呢？||\n\n||共鸣主：预言出错了就出错了，怎么还怪我呢？”||\n\n事实证明，预言并没有100%的准确性。因此可信，但不可坚信。",
               "body_en": ""
             }
           ],
