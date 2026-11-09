@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794248566187,
+  "updatedAt": 1794248625183,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -866,6 +866,13 @@
               "v": "第一章",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "对应六面体",
+              "k_en": "",
+              "v": "混乱",
+              "v_en": "Chaos",
+              "spoiler": 0
             }
           ],
           "sections": [],
@@ -925,6 +932,13 @@
               "v": "",
               "v_en": "",
               "spoiler": 0
+            },
+            {
+              "k": "对应六面体",
+              "k_en": "",
+              "v": "永恒",
+              "v_en": "",
+              "spoiler": 0
             }
           ],
           "sections": []
@@ -979,6 +993,13 @@
               "k": "首次登场",
               "k_en": "First appearance",
               "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "对应六面体",
+              "k_en": "",
+              "v": "虚无",
               "v_en": "",
               "spoiler": 0
             }
