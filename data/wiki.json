@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794259402894,
+  "updatedAt": 1794343428102,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -730,6 +730,15 @@
               "body": "表面平静，喜欢喝绿茶。对[[忻苑]]有难以衡量的偏爱。",
               "title_en": "Personality",
               "body_en": "Calm on the surface, fond of green tea. Loves to bicker, and is completely oblivious to Senpai’s “galaxy-brain schemes”."
+            },
+            {
+              "id": "skbtqu4",
+              "title": "爱好",
+              "title_en": "",
+              "level": 2,
+              "spoiler": 0,
+              "body": "特别喜欢忻苑。\n\n喜欢读书，看小说。",
+              "body_en": ""
             }
           ],
           "title_en": "Starmorni",
@@ -1882,6 +1891,174 @@
               "v": "启灵主",
               "v_en": "",
               "spoiler": 5
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cuyzw0a",
+          "group": "concept",
+          "title": "模因",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "类别",
+              "k_en": "Class",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者",
+              "k_en": "Walker",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cspbgkp",
+          "group": "concept",
+          "title": "旋律",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "类别",
+              "k_en": "Class",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者",
+              "k_en": "Walker",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "cvq9eqm",
+          "group": "concept",
+          "title": "命运",
+          "title_en": "",
+          "subtitle": "",
+          "subtitle_en": "",
+          "summary": "",
+          "image": "",
+          "spoiler": 0,
+          "infobox": [
+            {
+              "k": "英文名",
+              "k_en": "Chinese name",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "类别",
+              "k_en": "Class",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "立场",
+              "k_en": "",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "行者",
+              "k_en": "Walker",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "使者",
+              "k_en": "Envoy",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
+            },
+            {
+              "k": "首次登场",
+              "k_en": "First appearance",
+              "v": "",
+              "v_en": "",
+              "spoiler": 0
             }
           ],
           "sections": []
