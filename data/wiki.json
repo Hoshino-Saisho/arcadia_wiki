@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1794343428102,
+  "updatedAt": 1794348146983,
   "site": {
     "title": "理想乡 百科",
     "subtitle": "《理想乡》世界观资料库",
@@ -612,7 +612,8 @@
               "k": "特殊身份",
               "k_en": ""
             }
-          ]
+          ],
+          "spoiler": 0
         },
         {
           "id": "concept",
