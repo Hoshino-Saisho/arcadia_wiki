@@ -31,6 +31,17 @@
 
   <div id="toolbar"></div>
   <noscript>This site needs JavaScript. 这个网站需要开启 JavaScript。</noscript>
+  <script>
+    // 如果 4 秒后程序还没启动，多半是 assets 文件夹没放对位置
+    setTimeout(function () {
+      if (window.__wikiBooted) return;
+      var m = document.getElementById('main');
+      if (m) m.innerHTML = '<div style="max-width:640px;margin:40px auto;padding:20px;border:2px solid #b3262a;border-radius:10px;font:15px/1.7 sans-serif">' +
+        '<b>网站文件没有加载成功 / Site files failed to load</b><br>' +
+        '请确认仓库<b>根目录</b>里直接就有 <code>index.html</code>、<code>editor.html</code>、<code>assets</code> 文件夹和 <code>data</code> 文件夹，' +
+        '而不是被放在另一个文件夹里面。上传时要把解压后文件夹<b>里面的东西</b>拖进去，不要上传 zip 本身。</div>';
+    }, 4000);
+  </script>
   <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
